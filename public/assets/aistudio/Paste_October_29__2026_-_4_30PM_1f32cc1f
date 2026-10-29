@@ -1,0 +1,1285 @@
+# PROYECTO: MUNA — Web app educativa de prevención, información y acompañamiento sobre los TCA
+
+## 1. ROL Y OBJETIVO
+
+Actuá como un equipo interdisciplinario integrado por:
+
+- Un diseñador UX/UI especializado en aplicaciones educativas y diseño inclusivo.
+
+- Un desarrollador full-stack experto en aplicaciones web modernas.
+
+- Un especialista en educación para las distintas etapas evolutivas.
+
+- Un profesional con experiencia en prevención de los trastornos de la conducta alimentaria (TCA), alfabetización en salud y comunicación responsable.
+
+- Un especialista en educación argentina, con conocimiento del sistema educativo nacional y sus particularidades jurisdiccionales.
+
+Tu tarea es diseñar y desarrollar una aplicación educativa digital llamada **MUNA**, destinada a familias, docentes y comunidades educativas de Argentina.
+
+La plataforma debe promover la prevención, la concientización, la detección temprana de señales de alerta y el acompañamiento responsable en relación con los trastornos de la conducta alimentaria.
+
+No debe funcionar como una herramienta de diagnóstico ni como un sustituto de la atención profesional. Su finalidad es educar, brindar recursos prácticos, mejorar la comunicación entre adultos y niños, y facilitar el acceso a orientación confiable.
+
+No desarrolles únicamente una landing page, un sitio institucional estático ni un prototipo visual. Construí una web app navegable, visualmente coherente, responsive, con secciones funcionales y una arquitectura preparada para crecer.
+
+## 2. IDENTIDAD VISUAL: RESPETAR LA IMAGEN DE REFERENCIA
+
+Utilizá la imagen de referencia adjunta como fuente principal y obligatoria de la identidad visual de MUNA.
+
+La estética debe conservar sus características reconocibles:
+
+### Paleta cromática
+
+- Azul marino profundo: #0B1440.
+
+- Violeta azulado: #2B2FC7.
+
+- Verde lima: #B4F000.
+
+- Azul claro: #8AA1FF.
+
+- Rosa pastel intenso: #FF80C5.
+
+- Naranja coral: #FF6B4A.
+
+- Amarillo cálido: #FFD64A.
+
+- Crema claro: #FFFBEB.
+
+- Blanco: #FFFFFF.
+
+Usá el azul marino para textos principales, navegación y elementos de contraste; los tonos pastel para fondos; y los colores vibrantes para acciones, ilustraciones, tarjetas e indicadores positivos.
+
+Asegurá el contraste suficiente para facilitar la lectura, especialmente en textos pequeños. No sacrifiques accesibilidad para mantener la estética.
+
+### Tipografía
+
+Utilizá Poppins Rounded o una alternativa redondeada visualmente similar, con caracteres legibles y buena diferenciación entre letras y números.
+
+Empleá títulos grandes, amigables y contundentes, subtítulos claros, textos breves y jerarquías visuales bien definidas.
+
+### Estilo de ilustración
+
+Conservá el lenguaje visual de los personajes de la referencia:
+
+- Formas orgánicas, redondeadas y tridimensionales.
+
+- Expresiones amables, ojos grandes y gestos simpáticos.
+
+- Colores sólidos y saturados.
+
+- Contornos limpios y sombras suaves.
+
+- Elementos decorativos simples, estrellas, líneas, ondas y figuras abstractas.
+
+- Tarjetas con bordes redondeados y espacios generosos.
+
+Los personajes deben transmitir curiosidad, empatía, confianza, diversidad, creatividad y optimismo.
+
+Podés reutilizar los personajes existentes de la identidad MUNA si los recursos están disponibles. Si no lo están, creá ilustraciones originales coherentes con la referencia. No finjas que existen archivos de imagen que no fueron proporcionados.
+
+### Aplicación responsable de la identidad
+
+La estética debe ser lúdica y acogedora, pero el contenido sobre salud debe tratarse con seriedad.
+
+No conviertas los TCA en un juego, una competencia, un desafío de puntos ni una experiencia de gamificación basada en síntomas, peso, calorías o apariencia.
+
+Utilizá ilustraciones y personajes para facilitar la comprensión y reducir las barreras de acceso a la información, no para banalizar el sufrimiento.
+
+La interfaz debe transmitir: “Podemos aprender, escuchar, acompañar y pedir ayuda”.
+
+## 3. PÚBLICOS Y EXPERIENCIAS DIFERENCIADAS
+
+Al ingresar, la persona debe poder elegir su perfil:
+
+1. Soy madre, padre o familiar.
+
+2. Soy docente o integrante de una institución educativa.
+
+3. Soy estudiante o adolescente.
+
+4. Quiero conocer más sobre los TCA.
+
+Esta elección debe adaptar la navegación, los contenidos y las recomendaciones a las necesidades del usuario.
+
+No exijas crear una cuenta para consultar los contenidos educativos generales.
+
+Si se implementan cuentas, guardado de progreso o funciones institucionales, incorporá controles de privacidad, permisos y consentimiento adecuados a la edad.
+
+## 4. ESTRUCTURA PRINCIPAL DE LA APLICACIÓN
+
+Creá una navegación intuitiva con las siguientes secciones:
+
+### A. Inicio
+
+Diseñá una pantalla inicial cálida y clara que incluya:
+
+- Logo MUNA.
+
+- Una ilustración principal con los personajes.
+
+- Título: “Aprender también es un gran plan”.
+
+- Subtítulo: “Herramientas para prevenir, comprender y acompañar”.
+
+- Botones principales: “Soy familia”, “Soy docente” y “Quiero aprender”.
+
+- Acceso destacado a “¿Necesitás orientación?”.
+
+- Acceso a contenidos por etapa educativa.
+
+- Un módulo con recursos destacados de la semana.
+
+- Un mensaje breve que refuerce que los TCA son problemas de salud complejos y que pedir ayuda es importante.
+
+La pantalla debe tener el impacto visual de la referencia, pero priorizar la claridad de la navegación y la accesibilidad.
+
+### B. Aprender sobre los TCA
+
+Crear una biblioteca educativa organizada en módulos breves e interactivos.
+
+Incluir:
+
+- Qué son los trastornos de la conducta alimentaria.
+
+- Diferencias entre alimentación, imagen corporal, autoestima y salud.
+
+- Principales tipos de TCA, explicados con lenguaje accesible y sin descripciones gráficas ni instrucciones que puedan facilitar conductas dañinas.
+
+- Mitos y realidades.
+
+- Factores biológicos, psicológicos, familiares, sociales y culturales.
+
+- Influencia de las redes sociales, los ideales de belleza y los comentarios sobre el cuerpo.
+
+- Estigma, discriminación y gordofobia.
+
+- Señales de alerta emocionales, conductuales y físicas.
+
+- Importancia de la detección temprana.
+
+- Cómo conversar sin juzgar.
+
+- Cómo acompañar sin culpabilizar.
+
+- Cuándo y dónde buscar ayuda profesional.
+
+No presentes una única causa de los TCA ni atribuyas automáticamente la responsabilidad a las familias, las escuelas, el peso corporal o las redes sociales.
+
+No incluyas tablas de calorías, metas de peso, comparaciones corporales, imágenes de antes y después ni descripciones detalladas de métodos de restricción, purga o compensación.
+
+### C. Espacio para familias
+
+Desarrollá un área exclusiva para madres, padres, tutores y cuidadores.
+
+Debe incluir:
+
+1. Guía para acompañar el desarrollo de una relación saludable con la comida y el cuerpo.
+
+2. Cómo hablar sobre alimentación, apariencia, peso y autoestima.
+
+3. Frases que ayudan y expresiones que conviene evitar.
+
+4. Cómo reconocer cambios preocupantes sin vigilar ni controlar de manera invasiva.
+
+5. Cómo actuar ante posibles señales de alerta.
+
+6. Cómo escuchar sin interrogar, discutir ni culpabilizar.
+
+7. Cómo acompañar el uso de redes sociales y la exposición a ideales corporales.
+
+8. Cómo abordar comentarios familiares sobre cuerpos y dietas.
+
+9. Cómo conversar con la escuela.
+
+10. Cómo prepararse para consultar con profesionales de salud.
+
+11. Recursos descargables y guías prácticas.
+
+12. Preguntas frecuentes.
+
+Incorporá ejemplos de situaciones reales y respuestas sugeridas.
+
+Ejemplo:
+
+Situación: un adolescente expresa que odia su cuerpo.
+
+Respuesta sugerida: “Lamento que te estés sintiendo así. Quiero escucharte y entender qué te está pasando. No tenés que resolverlo a solas”.
+
+Explicá por qué una respuesta empática puede ser más útil que minimizar el malestar, discutir sobre su apariencia o dar consejos sobre dietas.
+
+Incluí una sección titulada “No necesitás tener todas las respuestas para acompañar”.
+
+### D. Espacio para docentes e instituciones educativas
+
+Creá un área específica para docentes, equipos de orientación escolar, directivos y otros profesionales educativos.
+
+Incluir:
+
+- Fundamentos de prevención de los TCA en la escuela.
+
+- Propuestas de educación socioemocional.
+
+- Actividades para trabajar autoestima, diversidad corporal, pensamiento crítico y alfabetización mediática.
+
+- Secuencias didácticas por nivel educativo.
+
+- Guías para conversar sobre alimentación e imagen corporal.
+
+- Prevención del bullying, la discriminación y los comentarios sobre el peso.
+
+- Pautas para actuar ante señales de alerta.
+
+- Orientaciones para comunicarse con las familias.
+
+- Criterios de derivación a profesionales de salud.
+
+- Recursos para jornadas institucionales.
+
+- Materiales imprimibles y descargables.
+
+- Guías para reuniones de equipos docentes.
+
+- Protocolos orientativos de actuación escolar.
+
+Los materiales deben distinguir entre la función pedagógica de la escuela y las competencias de los profesionales sanitarios.
+
+No indiques a los docentes que diagnostiquen, realicen tratamientos o investiguen invasivamente la conducta alimentaria de sus estudiantes.
+
+Incluí un apartado “Qué hacer y qué evitar”, con recomendaciones concretas para situaciones cotidianas.
+
+Las actividades no deben pedir a los estudiantes que revelen su peso, sus hábitos alimentarios personales, sus diagnósticos ni sus experiencias traumáticas.
+
+### E. Recorridos por etapa educativa
+
+Esta es una de las funciones centrales de la web app.
+
+Diseñá tres grandes recorridos, cada uno con contenidos, vocabulario, actividades y recursos adaptados a su etapa evolutiva.
+
+#### 1. Jardín: Nivel Inicial
+
+Público principal: niños pequeños, familias y docentes.
+
+Objetivo: promover el respeto por la diversidad, la identificación de emociones, el cuidado personal y la valoración de las personas más allá de su apariencia.
+
+Contenidos:
+
+- Todos los cuerpos merecen respeto.
+
+- Las personas somos diferentes y eso está bien.
+
+- Reconocer y expresar emociones.
+
+- Identificar el hambre, la saciedad y otras sensaciones corporales sin convertirlas en reglas rígidas.
+
+- Disfrutar de actividades, juegos y experiencias compartidas.
+
+- Evitar burlas y comentarios sobre los cuerpos.
+
+- Aprender que la comida no define si una persona es buena o mala.
+
+Actividades:
+
+- Cuentos ilustrados.
+
+- Juegos de emociones.
+
+- Tarjetas de situaciones cotidianas.
+
+- Actividades de dibujo y expresión.
+
+- Dinámicas para aprender a respetar las diferencias.
+
+- Orientaciones para las familias y los docentes.
+
+Usá instrucciones breves, ilustraciones expresivas y actividades acompañadas por adultos.
+
+No introduzcas contenidos clínicos complejos ni pidas a niños pequeños que identifiquen o diagnostiquen trastornos.
+
+#### 2. Primaria
+
+Público principal: estudiantes de primaria, familias y docentes.
+
+Objetivo: fortalecer la autoestima, el respeto por la diversidad corporal, la convivencia y la comprensión crítica de los mensajes sociales.
+
+Contenidos:
+
+- Cambios corporales y diversidad en el crecimiento.
+
+- Emociones y autoestima.
+
+- Estereotipos de belleza.
+
+- Burlas, bullying y discriminación por apariencia.
+
+- Redes sociales y mensajes publicitarios.
+
+- Alimentación y bienestar sin moralizar los alimentos.
+
+- Diferencias entre opiniones, hechos y mensajes publicitarios.
+
+- Qué hacer si alguien se siente mal con su cuerpo.
+
+- Cómo pedir ayuda a un adulto de confianza.
+
+Actividades:
+
+- Historias interactivas.
+
+- Análisis de mensajes publicitarios ficticios.
+
+- Juegos de verdadero o falso.
+
+- Historietas con decisiones.
+
+- Actividades de empatía y convivencia.
+
+- Guías de conversación para el aula.
+
+- Material para trabajar con familias.
+
+Las actividades deben adaptarse a las edades y permitir la participación sin exigir experiencias personales.
+
+#### 3. Secundaria
+
+Público principal: adolescentes, docentes, equipos de orientación y familias.
+
+Objetivo: desarrollar pensamiento crítico, alfabetización digital, reconocimiento de señales de alerta y capacidad para buscar ayuda.
+
+Contenidos:
+
+- Qué son los TCA y cómo afectan a las personas.
+
+- Imagen corporal, autoestima e identidad.
+
+- Presión social, estereotipos y comparación constante.
+
+- Redes sociales, filtros, algoritmos y publicidad.
+
+- Cultura de las dietas y estigmatización corporal.
+
+- Perfeccionismo, malestar emocional y factores de riesgo.
+
+- Señales de alerta y mitos sobre quién puede desarrollar un TCA.
+
+- Cómo acompañar a un amigo sin asumir el rol de terapeuta.
+
+- Cómo pedir ayuda de manera confidencial y segura.
+
+- Cómo identificar información confiable sobre salud.
+
+Actividades:
+
+- Casos ficticios con preguntas de reflexión.
+
+- Análisis crítico de publicaciones digitales.
+
+- Debates guiados.
+
+- Microvideos educativos.
+
+- Cuestionarios de comprensión.
+
+- Guías para conversar con adultos de confianza.
+
+- Recursos para centros de estudiantes y jornadas escolares.
+
+No incluyas contenidos que funcionen como autodiagnóstico ni permitan comparar la gravedad de los síntomas entre estudiantes.
+
+El adolescente debe recibir mensajes claros de que no necesita cumplir una apariencia determinada ni presentar síntomas visibles para merecer ayuda.
+
+### F. Centro de recursos
+
+Crear una biblioteca con filtros por:
+
+- Público: familias, docentes, adolescentes.
+
+- Nivel educativo: Inicial, Primaria, Secundaria.
+
+- Tema.
+
+- Formato.
+
+- Tiempo estimado de lectura o actividad.
+
+Cada recurso debe tener título, descripción, objetivos, público destinatario, duración estimada, materiales necesarios y recomendaciones de uso.
+
+Permitir visualizar recursos dentro de la web app y descargar versiones imprimibles cuando exista esa funcionalidad.
+
+Los recursos descargables deben generarse realmente; no mostrar botones de descarga que no hagan nada.
+
+### G. Señales de alerta y orientación
+
+Crear una sección sensible, accesible desde cualquier pantalla, titulada “¿Algo te preocupa?”.
+
+Debe explicar que algunos cambios persistentes en la alimentación, el estado emocional, la relación con el cuerpo, la actividad física o la vida social pueden justificar una consulta profesional.
+
+Presentá estas señales con cautela: ninguna señal aislada confirma un TCA y la ausencia de cambios físicos evidentes no lo descarta.
+
+Incluí una guía orientativa de próximos pasos:
+
+1. Escuchar sin juzgar.
+
+2. Expresar preocupación con respeto.
+
+3. Evitar comentarios sobre peso, apariencia o fuerza de voluntad.
+
+4. Buscar orientación profesional.
+
+5. Solicitar atención urgente si existe peligro inmediato o síntomas físicos graves.
+
+No utilices un test de puntuación que diagnostique TCA ni asignes porcentajes de riesgo sin validación clínica.
+
+No solicites información sensible para mostrar recursos básicos.
+
+### H. Recursos y ayuda en Argentina
+
+Crear un directorio específico para Argentina.
+
+Priorizar fuentes oficiales, instituciones sanitarias reconocidas, hospitales públicos, centros de salud, servicios de salud mental y organizaciones especializadas con información verificable.
+
+Incluir, cuando se pueda verificar:
+
+- Nombre de la institución.
+
+- Tipo de atención.
+
+- Población destinataria.
+
+- Provincia o jurisdicción.
+
+- Dirección.
+
+- Teléfono.
+
+- Sitio web oficial.
+
+- Requisitos de acceso.
+
+- Fecha de última verificación.
+
+Distinguir claramente entre orientación informativa, atención programada y emergencias.
+
+No inventes teléfonos, centros, direcciones, profesionales, organismos ni servicios de atención.
+
+Verificá los datos antes de publicarlos y diseñá el directorio para permitir actualizaciones periódicas.
+
+Considerá las diferencias entre Nación, provincias y Ciudad Autónoma de Buenos Aires. Facilitá la búsqueda por jurisdicción y contemplá tanto el sistema público como otros prestadores.
+
+Si no se puede verificar un recurso, indicá que la información está pendiente de validación en lugar de presentarla como confirmada.
+
+## 5. EXPERIENCIA DE USUARIO Y NAVEGACIÓN
+
+Diseñá una experiencia simple, cálida y sin barreras.
+
+En escritorio, utilizá una barra de navegación clara y un diseño por tarjetas.
+
+En celulares, utilizá navegación inferior con accesos prioritarios a Inicio, Aprender, Recursos, Mi espacio y Ayuda.
+
+La navegación debe adaptarse según el perfil elegido, sin bloquear el acceso a los recursos generales.
+
+Cada pantalla debe tener:
+
+- Un objetivo claro.
+
+- Un título descriptivo.
+
+- Textos breves y fáciles de comprender.
+
+- Un llamado a la acción principal.
+
+- Navegación de regreso evidente.
+
+- Indicaciones de progreso cuando correspondan.
+
+Incorporá búsquedas, filtros, estados vacíos útiles y mensajes de error comprensibles.
+
+No utilices ventanas emergentes invasivas ni notificaciones alarmistas.
+
+## 6. INTERACTIVIDAD EDUCATIVA
+
+Implementá actividades que permitan aprender sin convertir la salud en una competencia.
+
+Funciones recomendadas:
+
+- Cuestionarios de comprensión con explicaciones educativas.
+
+- Historias interactivas.
+
+- Tarjetas de mitos y realidades.
+
+- Actividades de reflexión.
+
+- Materiales descargables.
+
+- Favoritos para recursos.
+
+- Progreso de lectura opcional.
+
+- Recomendaciones de contenidos por nivel.
+
+- Acceso rápido a recursos de orientación.
+
+Los resultados de los cuestionarios deben indicar qué conceptos se comprendieron y ofrecer explicaciones respetuosas.
+
+No otorgues insignias por perder peso, controlar alimentos, revelar información íntima o reconocer síntomas personales.
+
+La gamificación debe centrarse en la curiosidad, el aprendizaje, la empatía y la convivencia.
+
+## 7. FUNCIONES ESPECÍFICAS PARA FAMILIAS Y DOCENTES
+
+Creá dos espacios diferenciados.
+
+### Panel para familias
+
+Debe ofrecer:
+
+- Recursos recomendados por edad.
+
+- Guías prácticas.
+
+- Preguntas frecuentes.
+
+- Materiales para conversar en casa.
+
+- Recursos para coordinarse con la escuela.
+
+- Orientación para buscar ayuda profesional.
+
+### Panel docente
+
+Debe ofrecer:
+
+- Planificador de actividades educativas.
+
+- Recursos por nivel y edad.
+
+- Secuencias didácticas.
+
+- Material imprimible.
+
+- Guías para situaciones escolares.
+
+- Recursos para reuniones con familias.
+
+- Acceso a fuentes oficiales y bibliografía.
+
+Si implementás un planificador, permití organizar actividades por curso, fecha y tema sin almacenar datos identificatorios de estudiantes.
+
+No incluyas expedientes individuales sobre supuestos TCA ni perfiles de riesgo de alumnos.
+
+## 8. CONTENIDOS, FUENTES Y RIGOR CIENTÍFICO
+
+Todos los contenidos deben redactarse en español rioplatense natural, utilizando expresiones comprensibles en Argentina.
+
+Empleá términos como “chicos”, “chicas”, “adolescentes”, “familias”, “docentes”, “escuela” y “equipo de orientación”, según el contexto.
+
+El tono debe ser:
+
+- Cercano.
+
+- Empático.
+
+- No culpabilizante.
+
+- Científicamente responsable.
+
+- Inclusivo.
+
+- No estigmatizante.
+
+- Adecuado a la edad.
+
+Basá los contenidos en fuentes verificables, como organismos sanitarios oficiales argentinos, la Organización Mundial de la Salud, UNICEF y guías clínicas o educativas reconocidas.
+
+Incluí referencias bibliográficas, enlaces a las fuentes y fecha de revisión de los contenidos.
+
+No inventes citas ni atribuyas recomendaciones a instituciones que no las hayan publicado.
+
+Marcá claramente cuáles son materiales educativos generales y cuáles necesitan revisión por profesionales especializados.
+
+La web app debe someter los contenidos sanitarios a revisión de profesionales con experiencia en TCA, salud mental y educación antes de su publicación definitiva.
+
+## 8 BIS. MARCO NORMATIVO ARGENTINO: TCA, EDUCACIÓN SEXUAL INTEGRAL Y PROTECCIÓN DE DERECHOS
+
+La web app MUNA debe incorporar un apartado específico sobre la legislación nacional argentina vinculada con la prevención y el abordaje de los trastornos de la conducta alimentaria (TCA), la Educación Sexual Integral (ESI), la salud mental, la alimentación saludable, los derechos de niñas, niños y adolescentes y la protección de los datos personales.
+
+La normativa no debe presentarse únicamente como bibliografía: debe orientar la elaboración de contenidos educativos, las actividades por nivel, las pautas para familias y docentes, los criterios de orientación y derivación, y los mecanismos de protección de menores. Diferenciá siempre la información educativa de las indicaciones clínicas o jurídicas individuales.
+
+### A. Legislación nacional que debe contemplarse
+
+**1. Ley 26.396 — Prevención y control de los trastornos alimentarios**
+
+Incorporá sus principios de prevención, asistencia integral, educación y lucha contra la discriminación y la estigmatización asociadas a los trastornos alimentarios.
+
+Aplicaciones dentro de MUNA:
+
+- Crear contenidos de prevención y concientización sobre los TCA.
+
+- Explicar la importancia de la detección temprana y de la orientación hacia profesionales de salud.
+
+- Elaborar materiales educativos para familias, docentes y comunidades escolares.
+
+- Promover un trato respetuoso hacia las personas que atraviesan estas problemáticas.
+
+- Evitar mensajes que responsabilicen exclusivamente a la persona, a su familia o a su entorno por el desarrollo de un TCA.
+
+Texto oficial: https://www.argentina.gob.ar/normativa/nacional/ley-26396-144033/texto
+
+**2. Ley 26.150 — Programa Nacional de Educación Sexual Integral**
+
+Reconocé el derecho de los estudiantes a recibir Educación Sexual Integral en los establecimientos educativos contemplados por la ley. La ESI debe abordarse desde una perspectiva integral que articule dimensiones biológicas, psicológicas, sociales, afectivas y éticas.
+
+Aplicaciones dentro de MUNA:
+
+- Incorporar contenidos adecuados a la edad sobre el cuidado del cuerpo y la salud, la autoestima, la afectividad, el respeto por la diversidad y el ejercicio de los derechos.
+
+- Promover el reconocimiento y la expresión de emociones, el respeto por las diferencias y la prevención de la discriminación.
+
+- Abordar los estereotipos de belleza, la presión social y los mensajes mediáticos que pueden afectar la relación con el cuerpo.
+
+- Diseñar actividades específicas para Nivel Inicial, Primaria y Secundaria.
+
+- Articular los contenidos sobre imagen corporal y prevención de los TCA con los objetivos de la ESI, sin presentar a esta última como un tratamiento clínico.
+
+Texto oficial: https://www.argentina.gob.ar/normativa/nacional/ley-26150-121222/texto
+
+**3. Resolución 340/18 del Consejo Federal de Educación — Núcleos de Aprendizajes Prioritarios de ESI**
+
+Utilizá esta resolución como referencia para organizar los contenidos de ESI por nivel educativo. Contemplá sus cinco ejes conceptuales:
+
+- Cuidar el cuerpo y la salud.
+
+- Valorar la afectividad.
+
+- Garantizar la equidad de género.
+
+- Respetar la diversidad.
+
+- Ejercer nuestros derechos.
+
+Relacioná estos ejes con la prevención de los TCA mediante propuestas que promuevan el respeto por la diversidad corporal, la autoestima, el reconocimiento de las emociones, la convivencia y el pensamiento crítico frente a los estereotipos sociales.
+
+Documento oficial: https://www.argentina.gob.ar/sites/default/files/2023/06/res._cfe_340-18_y_anexo_-_nucleos_de_aprendizaje_prioritarios_para_esi.pdf
+
+**4. Ley 26.061 — Protección Integral de los Derechos de las Niñas, Niños y Adolescentes**
+
+Incorporá el enfoque de protección integral de derechos, el respeto por la dignidad, la integridad personal, la intimidad y el derecho de niñas, niños y adolescentes a ser escuchados, de acuerdo con las disposiciones aplicables.
+
+Aplicaciones dentro de MUNA:
+
+- Adaptar los contenidos a la edad, el desarrollo y las necesidades de cada público.
+
+- Evitar actividades que expongan experiencias personales, diagnósticos o información íntima de estudiantes.
+
+- Orientar a las personas adultas para que escuchen sin juzgar, ridiculizar ni culpabilizar.
+
+- Incluir pautas de actuación ante situaciones que puedan comprometer los derechos o la integridad de un menor.
+
+- Orientar hacia los organismos competentes de protección de derechos cuando la situación lo requiera, de acuerdo con los procedimientos de cada jurisdicción.
+
+Texto oficial: https://www.argentina.gob.ar/normativa/nacional/ley-26061-110778/texto
+
+**5. Ley 26.657 — Derecho a la Protección de la Salud Mental**
+
+Adoptá un enfoque de derechos humanos para el abordaje del sufrimiento psíquico y de los problemas de salud mental que puedan estar relacionados con los TCA.
+
+Aplicaciones dentro de MUNA:
+
+- Evitar la estigmatización y las etiquetas que reduzcan a una persona a su diagnóstico.
+
+- Presentar los TCA como problemáticas complejas que requieren evaluación y atención profesional.
+
+- Promover el acceso a información confiable y a recursos de atención.
+
+- No sustituir la evaluación clínica, el diagnóstico ni el tratamiento profesional por actividades educativas o herramientas automatizadas.
+
+Texto oficial: https://www.argentina.gob.ar/normativa/nacional/ley-26657-175977/texto
+
+**6. Ley 27.642 — Promoción de la Alimentación Saludable**
+
+Incorporá sus disposiciones sobre el derecho a una alimentación adecuada, el acceso a información nutricional comprensible, la educación alimentaria y los entornos escolares saludables.
+
+Aplicaciones dentro de MUNA:
+
+- Desarrollar actividades de educación alimentaria que no moralicen los alimentos ni asocien el valor personal con la alimentación o el peso.
+
+- Promover una mirada crítica sobre la publicidad y los mensajes comerciales vinculados con los alimentos.
+
+- Diferenciar la educación alimentaria de las dietas restrictivas y de las indicaciones nutricionales individualizadas.
+
+- Considerar las disposiciones específicas aplicables a la oferta, comercialización, publicidad y promoción de productos en los establecimientos educativos.
+
+Texto oficial: https://www.argentina.gob.ar/normativa/nacional/356607/texto
+
+**7. Ley 26.529 — Derechos del Paciente**
+
+Considerá los principios de trato digno y respetuoso, intimidad, confidencialidad, información sanitaria y consentimiento informado en las situaciones en las que corresponda su aplicación.
+
+Aplicaciones dentro de MUNA:
+
+- Diferenciar la orientación educativa de la atención sanitaria.
+
+- No publicar ni compartir información sobre la salud de una persona sin una base legítima para hacerlo.
+
+- Explicar que la web app no constituye un servicio de atención médica ni establece diagnósticos.
+
+- Orientar a las familias para que consulten con profesionales habilitados y respeten los derechos de la persona que recibe atención.
+
+Texto oficial: https://www.argentina.gob.ar/normativa/nacional/ley-26529-160432/texto
+
+**8. Ley 25.326 — Protección de los Datos Personales**
+
+Aplicá los principios de protección de datos personales, especialmente porque la información vinculada con la salud constituye información sensible.
+
+Aplicaciones dentro de MUNA:
+
+- Minimizar la recolección y el almacenamiento de información.
+
+- No crear perfiles de riesgo de estudiantes a partir de sus respuestas, comportamientos o características físicas.
+
+- No solicitar información clínica para acceder a los contenidos educativos generales.
+
+- Proteger la información que eventualmente se almacene y limitar su acceso.
+
+- No compartir datos personales o sensibles sin una base jurídica válida.
+
+Texto oficial: https://www.argentina.gob.ar/normativa/nacional/ley-25326-64790/texto
+
+### B. Protocolo orientativo para actuar ante posibles casos de TCA
+
+Creá una guía diferenciada para familias, docentes y equipos de orientación escolar. Debe ser educativa y preventiva, no un protocolo clínico ni un reemplazo de los procedimientos oficiales de cada institución.
+
+Ante una posible situación de TCA, la web app debe orientar a las personas usuarias para que:
+
+1. **Escuchen sin juzgar.** Brinden un espacio de conversación respetuoso, sin burlas, amenazas, reproches ni comentarios sobre la apariencia física.
+
+2. **Eviten diagnosticar.** Las señales de alerta no confirman por sí mismas la existencia de un TCA. La evaluación debe ser realizada por profesionales de salud competentes.
+
+3. **No culpabilicen.** Eviten atribuir la situación a una supuesta falta de voluntad, a decisiones individuales o a la conducta de la familia.
+
+4. **Busquen orientación profesional.** Recomienden consultar con servicios de salud y facilitar el acceso a una evaluación adecuada.
+
+5. **Actúen dentro de su rol.** Los docentes deben acompañar, comunicar sus preocupaciones por los canales institucionales y seguir los procedimientos correspondientes. No deben investigar invasivamente, realizar diagnósticos ni indicar tratamientos.
+
+6. **Protejan la intimidad.** No expongan a la persona ante el curso, no difundan rumores ni compartan información sensible con personas que no deban conocerla.
+
+7. **Consideren la urgencia.** Ante síntomas físicos graves, riesgo inmediato para la vida o una situación que requiera atención urgente, deben buscar asistencia sanitaria inmediata mediante los servicios de emergencia correspondientes.
+
+8. **Activen los mecanismos de protección cuando corresponda.** Si existen indicios de vulneración de derechos, violencia, abandono u otra situación que comprometa la integridad de un menor, deben seguir los procedimientos institucionales y jurisdiccionales aplicables.
+
+La guía debe incluir ejemplos de situaciones, respuestas recomendadas, expresiones que conviene evitar y criterios para distinguir entre acompañamiento educativo, consulta profesional y emergencia.
+
+No establezcas obligaciones legales específicas para docentes o familias sin verificar previamente la normativa aplicable a la jurisdicción y al tipo de institución.
+
+### C. Integración transversal de la ESI y la prevención de los TCA
+
+Vinculá los contenidos de ESI con los recorridos de Nivel Inicial, Primaria y Secundaria, respetando los lineamientos curriculares y la etapa evolutiva.
+
+En Nivel Inicial, priorizá el reconocimiento de emociones, el cuidado del cuerpo, la diversidad y el respeto por las diferencias.
+
+En Primaria, incorporá el crecimiento y los cambios corporales, la autoestima, la prevención de las burlas y el análisis de estereotipos de belleza y mensajes publicitarios.
+
+En Secundaria, profundizá en la imagen corporal, la identidad, la presión social, los algoritmos y las redes sociales, la discriminación, la alfabetización mediática y el acceso a recursos de ayuda.
+
+Las actividades deben permitir aprender sin exigir que los estudiantes revelen información íntima, experiencias personales, hábitos alimentarios, peso, diagnósticos o situaciones familiares.
+
+### D. Adaptación jurisdiccional y actualización normativa
+
+Argentina cuenta con normas nacionales y disposiciones provinciales y de la Ciudad Autónoma de Buenos Aires que pueden complementar la regulación nacional.
+
+Por eso, la web app debe:
+
+- Diferenciar las leyes nacionales de las leyes, resoluciones, protocolos y procedimientos provinciales o municipales.
+
+- Permitir filtrar los recursos institucionales según la jurisdicción.
+
+- Incorporar protocolos escolares oficiales cuando hayan sido localizados y verificados.
+
+- Mostrar la fuente oficial, el organismo emisor, el alcance territorial y la fecha de revisión de cada norma.
+
+- Verificar el texto actualizado, la reglamentación y las posibles modificaciones de las normas antes de presentar una indicación como vigente.
+
+- No inventar protocolos, obligaciones, teléfonos de atención ni procedimientos administrativos.
+
+- Señalar expresamente cuando una disposición requiere validación jurídica o revisión por parte de la autoridad educativa o sanitaria competente.
+
+### E. Fuentes, validación y límites de la web app
+
+Utilizá prioritariamente textos normativos oficiales publicados en Argentina.gob.ar, Infoleg y los sitios oficiales de los organismos educativos y sanitarios competentes.
+
+Para cada norma, incorporá:
+
+- Nombre y número de la norma.
+
+- Organismo emisor.
+
+- Síntesis de los artículos pertinentes.
+
+- Aplicación concreta dentro de MUNA.
+
+- Enlace a la fuente oficial.
+
+- Estado de verificación y fecha de última revisión.
+
+Antes de publicar los contenidos, solicitá revisión por profesionales de salud con experiencia en TCA, especialistas en ESI y educación, y asesoramiento jurídico cuando corresponda.
+
+La web app debe aclarar que ofrece información y orientación educativa, no asesoramiento jurídico individual, diagnóstico médico ni tratamiento psicológico o nutricional.
+
+No presentes las normas como si todas regularan exactamente la misma materia: distinguí su objeto, alcance y ámbito de aplicación, y verificá cualquier interpretación jurídica específica antes de convertirla en una instrucción operativa.
+
+## 9. SEGURIDAD, PRIVACIDAD Y PROTECCIÓN DE MENORES
+
+Diseñá la plataforma con privacidad desde el inicio.
+
+Principios obligatorios:
+
+- Recolectar la menor cantidad de datos posible.
+
+- No pedir peso, talla, fotografías corporales ni registros alimentarios.
+
+- No inferir diagnósticos ni crear perfiles de riesgo.
+
+- No utilizar publicidad comportamental dirigida a menores.
+
+- No compartir información personal con terceros sin una base legal válida.
+
+- Proteger las cuentas y los datos almacenados.
+
+- Implementar controles de acceso si existen funciones privadas.
+
+- Permitir acceder a contenidos generales sin registrarse.
+
+- Informar claramente qué datos se guardan y con qué finalidad.
+
+- Incorporar procedimientos adecuados para la edad, el consentimiento y la protección de menores conforme a la normativa aplicable en Argentina.
+
+No habilites un chat abierto entre menores y desconocidos.
+
+Si se implementa un asistente conversacional, debe limitarse a información educativa, no diagnosticar ni indicar tratamientos, reconocer situaciones potencialmente urgentes y orientar hacia adultos de confianza y profesionales.
+
+No prometas confidencialidad absoluta si existe una situación que requiere activar mecanismos de protección.
+
+## 10. ACCESIBILIDAD E INCLUSIÓN
+
+Aplicá buenas prácticas de accesibilidad:
+
+- Contraste adecuado.
+
+- Navegación mediante teclado.
+
+- Textos alternativos para imágenes.
+
+- Etiquetas claras para lectores de pantalla.
+
+- Tamaños de fuente legibles.
+
+- Áreas táctiles amplias.
+
+- Formularios accesibles.
+
+- Subtítulos para videos.
+
+- Lenguaje sencillo.
+
+- Respeto por las preferencias de movimiento reducido.
+
+Diseñá para personas con distintas capacidades, contextos familiares, identidades, tipos de cuerpo y condiciones socioeconómicas.
+
+La web app debe funcionar en teléfonos, tabletas y computadoras, con especial atención a conexiones lentas y dispositivos de gama baja.
+REQUISITOS ESPECÍFICOS DE WEB APP (OBLIGATORIOS)
+MUNA debe construirse como una aplicación web que se utiliza desde un navegador, no como una app nativa exclusiva para Android o iOS. La experiencia principal debe estar disponible al abrir una URL y funcionar en Chrome, Safari, Firefox y Edge actuales.
+Comportamiento web y navegación
+- Implementá rutas/páginas reales para las secciones principales, con navegación funcional y URLs claras. Al recargar una ruta o abrirla directamente, la página debe seguir funcionando.
+- Incluí estados de carga, error, contenido vacío y confirmación cuando sean necesarios.
+- Los enlaces deben ser enlaces reales y los botones deben ejecutar acciones reales. No uses controles meramente decorativos.
+- Añadí estados activos de navegación, migas de pan cuando ayuden a orientarse y una forma clara de volver.
+- En escritorio, utilizá navegación superior o lateral según convenga al diseño; en móvil, una navegación compacta y accesible. No ocultes secciones esenciales en pantallas pequeñas.
+- Asegurá que los modales, menús, filtros y formularios puedan utilizarse con teclado, mouse y pantalla táctil.
+- La interfaz debe adaptarse fluidamente a anchos de 320 px en adelante, sin desbordamientos horizontales ni texto cortado.
+- Usá HTML semántico, títulos jerárquicos, etiquetas accesibles y enlaces descriptivos.
+- Configurá título de página, descripción y metadatos básicos para cada sección cuando corresponda. No incluyas información sensible en URLs ni en metadatos.
+Arquitectura técnica web
+- Preferí React + TypeScript y un sistema de estilos consistente si el entorno lo permite.
+- Implementá un sistema de rutas apropiado para el entorno disponible. Si no hay router instalado, elegí una alternativa compatible y documentá la decisión.
+- Separá páginas, componentes compartidos, datos de contenido, estilos y utilidades en módulos organizados.
+- No agregues dependencias innecesarias ni supongas que existen servicios, claves, bases de datos o APIs que no fueron configurados.
+- Si el entorno no permite un backend, entregá una versión funcional del lado del cliente con contenido de demostración claramente identificado. La persistencia local debe limitarse a preferencias no sensibles, como favoritos o ajustes de interfaz.
+- Si una función requiere backend (por ejemplo, cuentas, administración de contenidos o sincronización), prepará una interfaz de integración clara y explicá qué configuración falta. No simules que los datos se sincronizan entre usuarios.
+- No guardes datos clínicos, peso, registros alimentarios, diagnósticos ni perfiles de riesgo en el navegador.
+- Prepará la estructura para despliegue en un servicio de hosting web, sin afirmar que quedó publicada si no se realizó un despliegue real.
+- Una PWA instalable puede considerarse como mejora opcional, pero no debe ser un requisito para utilizar la web app ni reemplazar la experiencia web principal.
+Pruebas de aceptación para navegador
+Antes de dar por terminada la implementación, comprobá:
+1. Que todas las rutas y enlaces internos principales funcionen.
+2. Que no haya errores de consola conocidos ni importaciones inexistentes.
+3. Que las acciones principales de cada pantalla tengan un resultado visible.
+4. Que filtros, búsqueda, cuestionarios, favoritos y navegación funcionen según lo implementado.
+5. Que el diseño sea usable en móvil, tablet y escritorio.
+6. Que los recursos descargables solo muestren una opción de descarga cuando exista un archivo real disponible.
+7. Que los datos de ayuda y normativa se identifiquen como verificados o pendientes de validación.
+8. Que el contenido educativo general se pueda consultar sin registrarse.
+9. Que no se soliciten datos personales o sensibles innecesarios.
+10. Que se informe con claridad qué funciones son plenamente operativas, cuáles usan datos de demostración y cuáles requieren servicios externos.
+Entrega esperada en Google AI Studio
+Generá la web app dentro del entorno de código disponible: estructura de archivos, componentes, estilos, rutas y contenido inicial funcional. No respondas únicamente con una descripción, un wireframe o una lista de recomendaciones. Si el entorno no puede completar alguna integración, dejá una alternativa funcional y documentá la limitación de forma explícita.
+
+## 11. DISEÑO TÉCNICO Y DESARROLLO
+
+Desarrollá una web app responsive, con componentes reutilizables y arquitectura mantenible.
+
+Si el entorno lo permite, utilizá:
+
+- React.
+
+- TypeScript.
+
+- CSS modular o un sistema de estilos consistente.
+
+- Componentes reutilizables.
+
+- Una estructura de rutas clara.
+
+- Persistencia de datos solo cuando sea necesaria.
+
+- Un backend seguro si existen funciones que realmente lo requieran.
+
+Separá los contenidos educativos de los componentes de interfaz para facilitar su actualización y revisión profesional.
+
+Prepará una arquitectura que permita incorporar posteriormente autenticación, administración de contenidos, analítica respetuosa de la privacidad y un directorio actualizado de recursos.
+
+Si no hay backend configurado, construí una primera versión funcional con datos de demostración claramente identificados y persistencia local solo para preferencias no sensibles. No simules que hay cuentas, bases de datos, descargas o servicios conectados si no existen.
+
+Nunca expongas claves de API en el código del cliente.
+
+## 12. SISTEMA DE DISEÑO REUTILIZABLE
+
+Definí tokens globales para:
+
+- Colores.
+
+- Tipografía.
+
+- Espaciados.
+
+- Radios de borde.
+
+- Sombras.
+
+- Botones.
+
+- Tarjetas.
+
+- Etiquetas.
+
+- Campos de formulario.
+
+- Estados de interacción.
+
+- Iconografía.
+
+- Ilustraciones.
+
+- Diseños responsive.
+
+Usá tarjetas redondeadas, fondos crema, bloques de color vibrantes, iconos sencillos y personajes ilustrados.
+
+Mantené una identidad consistente en todas las pantallas.
+
+Evitá interfaces genéricas de administración, diseños excesivamente corporativos, fondos oscuros dominantes o estética hospitalaria fría.
+
+## 13. PANTALLAS QUE DEBÉS CONSTRUIR
+
+Desarrollá, como mínimo, estas pantallas funcionales:
+
+1. Inicio.
+
+2. Selección de perfil.
+
+3. Explorador de contenidos.
+
+4. Detalle de un módulo educativo.
+
+5. Espacio para familias.
+
+6. Espacio para docentes.
+
+7. Recorrido de Nivel Inicial.
+
+8. Recorrido de Primaria.
+
+9. Recorrido de Secundaria.
+
+10. Actividad interactiva.
+
+11. Centro de recursos.
+
+12. Detalle y descarga de recursos.
+
+13. Señales de alerta y orientación.
+
+14. Directorio de ayuda en Argentina.
+
+15. Información sobre MUNA, sus fuentes y su enfoque de privacidad.
+
+Incluí ejemplos reales de contenido educativo en cada sección para que la web app no parezca una maqueta vacía.
+
+## 14. CRITERIOS DE CALIDAD
+
+La web app final debe cumplir con estos criterios:
+
+- La identidad visual se reconoce como una extensión de la imagen de referencia.
+
+- Los recorridos educativos están claramente diferenciados por etapa.
+
+- Las áreas para familias y docentes tienen contenido y navegación propios.
+
+- La información sanitaria es responsable y no estigmatizante.
+
+- Las funciones visibles funcionan realmente.
+
+- Los recursos y las fuentes están identificados.
+
+- La ayuda argentina no contiene datos inventados.
+
+- La web app es responsive y accesible.
+
+- No hay enlaces rotos, botones decorativos que aparenten funcionar ni contenido de relleno.
+
+- Los menores no quedan expuestos a mecanismos invasivos de recopilación de datos.
+
+## 15. FORMA DE TRABAJO Y ENTREGA
+
+Trabajá por etapas, pero comenzá implementando una versión inicial navegable y visualmente cuidada.
+
+Primero:
+
+1. Definí la arquitectura y las rutas.
+
+2. Establecé el sistema de diseño a partir de la imagen adjunta.
+
+3. Construí la navegación principal.
+
+4. Implementá la pantalla de inicio.
+
+5. Desarrollá las áreas de familias y docentes.
+
+6. Creá los tres recorridos educativos.
+
+7. Incorporá recursos, actividades y orientación.
+
+8. Verificá el funcionamiento de cada interacción.
+
+9. Revisá la experiencia en escritorio y móvil.
+
+10. Identificá claramente qué datos, fuentes y funciones requieren configuración o validación externa.
+
+No te limites a describir cómo sería la web app: generá el código y la interfaz funcional dentro del entorno disponible.
+
+Si una función no puede completarse por falta de servicios externos, dejá una alternativa funcional, explicá la limitación y no simules que el servicio está conectado.
+IDENTIDAD DE MARCA Y UNIVERSO DE PERSONAJES: MUNAMIGOS
+La web app MUNA debe utilizar de manera consistente a sus seis personajes oficiales como parte central de su identidad visual, narrativa y pedagógica.
+
+Los personajes no son elementos decorativos: son compañeros educativos que facilitan la comprensión de los contenidos, ayudan a expresar emociones, promueven el pensamiento crítico y acompañan las propuestas de prevención de los trastornos de la conducta alimentaria (TCA).
+
+IMPORTANTE: respetá los nombres, las formas, las personalidades y las frases oficiales que se describen a continuación. No inventes nombres alternativos ni reemplaces estos personajes por otros.
+
+Conservá la identidad visual de la imagen de referencia: personajes tridimensionales, brillantes, redondeados, expresivos, con ojos grandes, colores vibrantes, sombras suaves y una estética amigable. Cada personaje debe mantener su silueta característica para que pueda reconocerse fácilmente en todas las pantallas.
+1. POMPÓN — El compañero incondicional
+Forma: redondo.
+
+Personalidad: tierno, cercano y contenedor.
+
+Color asociado: naranja.
+
+Pompón es redondito, cálido y siempre está dispuesto a escuchar. Nos recuerda que no tenemos que tener todo resuelto para merecer cariño. Acompaña cuando aparecen dudas, vergüenza o inseguridades, sin juzgar y sin comparar.
+
+Su función es transmitir aceptación, pertenencia y acompañamiento incondicional. Debe ayudar a que los usuarios se sientan recibidos, sin presión por aprender rápido, responder correctamente o mostrar una determinada imagen de sí mismos.
+
+Frase oficial: “Estoy acá para acompañarte, tal como sos”.
+
+Funciones dentro de la web app:
+- Dar la bienvenida a los usuarios.
+- Presentar los espacios para familias, docentes y estudiantes.
+- Acompañar los mensajes de contención.
+- Introducir actividades sobre autoestima, aceptación y respeto.
+- Recordar que pedir ayuda no es una señal de debilidad.
+- Ofrecer mensajes cálidos cuando una persona no sabe por dónde empezar.
+Pompón nunca debe prometer que puede resolver un problema por sí solo ni sustituir el acompañamiento de personas adultas de confianza o profesionales.
+2. LUMI — La curiosa que ilumina
+Forma: estrella.
+
+Personalidad: curiosa, optimista y reflexiva.
+
+Color asociado: verde lima.
+
+Lumi siempre quiere descubrir cosas nuevas. Ayuda a cuestionar los mensajes que vemos en redes, los ideales de belleza y las comparaciones. Enseña que no todo lo que vemos o escuchamos es verdad, y que cada persona es mucho más que su apariencia.
+
+Su función es despertar la curiosidad, ampliar perspectivas y promover una mirada crítica sobre los mensajes sociales relacionados con los cuerpos, la belleza y el bienestar.
+
+Frase oficial: “¿Y si miramos las cosas de otra manera?”.
+
+Funciones dentro de la web app:
+- Presentar preguntas para reflexionar.
+- Introducir actividades sobre diversidad corporal.
+- Explorar cómo se construyen los ideales de belleza.
+- Ayudar a cuestionar estereotipos y comparaciones.
+- Promover el pensamiento crítico sobre redes sociales y publicidad.
+- Invitar a descubrir nuevas formas de entender el bienestar.
+Lumi debe enseñar a hacerse preguntas sin avergonzar a quien se equivocó ni presentar todas las opiniones como igualmente confiables.
+3. MORA — La que piensa antes de creer
+Forma: hexágono.
+
+Personalidad: observadora, ingeniosa y crítica.
+
+Color asociado: azul intenso.
+
+Mora es despierta y le encanta hacerse preguntas. Ayuda a detectar consejos dañinos, mitos sobre alimentación y contenidos que pueden hacernos sentir mal. Nos invita a buscar información confiable y hablar con personas adultas de confianza.
+
+Su función es desarrollar alfabetización mediática y sanitaria, enseñar a distinguir información confiable de mensajes engañosos y promover decisiones informadas.
+
+Frase oficial: “Antes de creerlo, ¡vamos a pensarlo!”.
+
+Funciones dentro de la web app:
+- Presentar actividades de mitos y realidades.
+- Enseñar a identificar información sanitaria dudosa.
+- Analizar mensajes publicitarios y publicaciones ficticias.
+- Explicar por qué las recomendaciones sobre salud deben basarse en fuentes confiables.
+- Promover la consulta de fuentes oficiales y profesionales.
+- Enseñar cuándo conviene hablar con una persona adulta de confianza.
+Mora no debe diagnosticar TCA, ofrecer consejos clínicos individualizados ni recomendar dietas, restricciones alimentarias o métodos de control corporal.
+4. CORA — La experta en emociones
+Forma: corazón.
+
+Personalidad: empática, sensible y comprensiva.
+
+Color asociado: rosa.
+
+Cora sabe que todas las emociones merecen un lugar: la alegría, la tristeza, el enojo, el miedo y la confusión. Ayuda a poner en palabras lo que sentimos y recuerda que no hace falta atravesar los momentos difíciles en soledad.
+
+Su función es acompañar la educación socioemocional, fortalecer la empatía y ofrecer herramientas para comunicar sentimientos y necesidades.
+
+Frase oficial: “Lo que sentís importa y merece ser escuchado”.
+
+Funciones dentro de la web app:
+- Presentar actividades para reconocer y nombrar emociones.
+- Enseñar maneras respetuosas de expresar el malestar.
+- Introducir ejercicios de reflexión y comunicación.
+- Ayudar a reconocer cuándo una preocupación merece ser compartida.
+- Promover la escucha activa entre compañeros, familias y docentes.
+- Acompañar los contenidos sobre autoestima y bienestar emocional.
+Cora nunca debe minimizar el sufrimiento con frases como “no es para tanto” o “tenés que quererte más”. Debe validar las emociones sin afirmar que conoce exactamente lo que siente otra persona.
+5. TITI — La exploradora de posibilidades
+Forma: triángulo.
+
+Personalidad: alegre, creativa y espontánea.
+
+Color asociado: amarillo.
+
+Titi disfruta jugar, inventar y probar actividades nuevas. Nos muestra que el bienestar también se construye con amistades, hobbies, descanso, movimiento placentero y momentos compartidos. Nos recuerda que somos mucho más que nuestro aspecto físico.
+
+Su función es ampliar la mirada sobre el bienestar y promover experiencias significativas que no dependan de la apariencia, el peso ni el rendimiento.
+
+Frase oficial: “¡Hay un montón de formas de disfrutar!”.
+
+Funciones dentro de la web app:
+- Presentar cuentos, juegos y actividades creativas.
+- Proponer experiencias de convivencia y colaboración.
+- Explorar intereses, talentos y actividades recreativas.
+- Promover el descanso y el disfrute sin exigencias de rendimiento.
+- Favorecer una relación respetuosa con el cuerpo.
+- Ayudar a reconocer que el valor personal no depende de la apariencia física.
+Titi debe presentar el movimiento como una posibilidad placentera y diversa, nunca como una obligación para compensar alimentos, cambiar el cuerpo o alcanzar un peso determinado.
+6. BLU — La calma que acompaña
+Forma: cuadrado de bordes redondeados.
+
+Personalidad: tranquilo, paciente y confiable.
+
+Color asociado: celeste.
+
+Blu transmite calma cuando todo parece demasiado. Propone hacer una pausa, reconocer lo que necesitamos y pedir ayuda si algo nos preocupa. No pretende solucionar todo: enseña que avanzar de a poco también está bien.
+
+Su función es orientar a los usuarios, ofrecer pasos concretos y facilitar el acceso a recursos de acompañamiento y ayuda profesional.
+
+Frase oficial: “Vamos de a poquito, no tenés que hacerlo solo”.
+
+Funciones dentro de la web app:
+- Presentar guías paso a paso.
+- Acompañar las secciones para familias y docentes.
+- Explicar cómo actuar ante señales de alerta.
+- Ofrecer estrategias generales de pausa y reconocimiento emocional.
+- Orientar sobre cuándo y dónde buscar ayuda.
+- Facilitar el acceso al directorio de recursos sanitarios de Argentina.
+Blu no debe garantizar resultados ni presentar técnicas de relajación como tratamiento de los TCA. Ante situaciones de urgencia, debe dirigir al usuario hacia servicios de atención adecuados.
+7. CÓMO FUNCIONAN LOS MUNAMIGOS
+Los seis personajes deben complementarse y aparecer en las distintas secciones según el objetivo educativo.
+- Pompón: aceptación, confianza y acompañamiento.
+- Lumi: curiosidad, diversidad y reflexión.
+- Mora: pensamiento crítico e información confiable.
+- Cora: emociones, empatía y comunicación.
+- Titi: creatividad, disfrute y bienestar integral.
+- Blu: orientación, calma y búsqueda de ayuda.
+No es necesario que aparezcan los seis en todas las pantallas. Elegí uno o dos personajes por sección para evitar la sobrecarga visual y mantener una narrativa clara.
+
+Cada personaje debe conservar su personalidad, vocabulario, color y función en todas las experiencias, independientemente de la edad del usuario.
+8. ADAPTACIÓN POR ETAPA EDUCATIVA
+Nivel Inicial — Jardín
+Priorizá a Pompón, Cora y Titi.
+
+Utilizá cuentos, ilustraciones, emociones, juegos cooperativos y actividades acompañadas por adultos. El objetivo es aprender a respetar las diferencias, expresar sentimientos y construir vínculos seguros.
+
+Lumi y Mora pueden introducir preguntas muy sencillas sobre diversidad y respeto, sin contenidos abstractos ni conceptos clínicos complejos.
+
+Blu puede ayudar a comunicar que está bien pedir ayuda a una persona adulta de confianza.
+Nivel Primario
+Distribuí los seis personajes según el objetivo de cada actividad.
+- Pompón: pertenencia, aceptación y confianza.
+- Lumi: ideales de belleza y diversidad.
+- Mora: mitos, publicidad y mensajes de internet.
+- Cora: emociones, autoestima y comunicación.
+- Titi: creatividad, convivencia y bienestar.
+- Blu: resolución de situaciones y búsqueda de ayuda.
+Utilizá historias interactivas, preguntas de reflexión, situaciones ficticias y actividades grupales.
+Nivel Secundario
+Dales a los personajes un lenguaje más reflexivo, manteniendo sus identidades visuales.
+- Pompón acompaña las inseguridades y promueve la búsqueda de apoyo.
+- Lumi cuestiona los ideales de belleza y la comparación social.
+- Mora analiza contenidos digitales, mitos y desinformación.
+- Cora facilita conversaciones sobre emociones, presión social y autoestima.
+- Titi promueve una mirada amplia sobre la identidad y el bienestar.
+- Blu orienta sobre señales de alerta, redes de apoyo y atención profesional.
+Las actividades deben respetar la autonomía adolescente, la privacidad y la diversidad de experiencias.
+9. USO DE LOS PERSONAJES EN LA INTERFAZ
+Integrá los personajes en:
+- Pantalla de bienvenida.
+- Tarjetas de las distintas secciones.
+- Presentaciones de módulos educativos.
+- Historias y actividades interactivas.
+- Mensajes de orientación.
+- Guías para familias.
+- Recursos para docentes.
+- Materiales descargables.
+- Estados vacíos y mensajes de ayuda.
+- Pantallas de finalización de actividades.
+Cada aparición debe tener una función comunicativa clara.
+
+Si los archivos originales de los personajes están disponibles, utilizalos sin alterar sus siluetas ni colores. Si no lo están, creá ilustraciones provisionales coherentes con la identidad visual y organizá los componentes para que puedan reemplazarse fácilmente por los recursos originales.
+
+No sustituyas los personajes por emojis genéricos ni ilustraciones de estilos incompatibles.
+10. REGLAS DE COMUNICACIÓN RESPONSABLE
+Todos los personajes deben cumplir estas reglas:
+- No juzgar cuerpos, alimentos ni emociones.
+- No utilizar el peso como indicador de valor personal o salud mental.
+- No hacer bromas sobre síntomas, diagnósticos o sufrimiento.
+- No fomentar comparaciones corporales.
+- No ofrecer diagnósticos ni tratamientos.
+- No culpabilizar a las familias ni a los docentes.
+- No prometer que una actividad evitará por sí sola un TCA.
+- No reemplazar la ayuda profesional por mensajes motivacionales.
+- Promover la consulta temprana y el acompañamiento respetuoso.
+- Utilizar un lenguaje inclusivo, claro y adecuado a la edad.
+Los personajes deben ser consistentes con el propósito central de MUNA: construir una comunidad educativa que escuche, informe, prevenga y acompañe sin estigmatizar.
+
+Resultado esperado: una aplicación en la que la Banda MUNA sea reconocible, coherente y pedagógicamente útil. Cada personaje debe ayudar a transmitir un aspecto diferente de la prevención de los TCA, mientras la plataforma mantiene una identidad visual unificada, cálida, accesible y adaptada a las familias y escuelas argentinas.
+
+**Resultado esperado:** una primera versión de MUNA que se sienta como un producto educativo real, cercano y confiable para Argentina, con una identidad visual memorable, contenidos adaptados a cada etapa educativa y herramientas concretas para que familias y escuelas puedan prevenir, detectar señales de alerta y acompañar de manera responsable.

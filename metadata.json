@@ -1,0 +1,6 @@
+{
+  "name": "MUNA — Prevención y Acompañamiento en TCA",
+  "description": "Web app educativa para familias, docentes y adolescentes de Argentina sobre prevención, detección temprana y acompañamiento en trastornos de la conducta alimentaria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
