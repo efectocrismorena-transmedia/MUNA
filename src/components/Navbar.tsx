@@ -77,11 +77,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3 cursor-pointer select-none group"
           >
-            {/* Playful logo reproducing reference style */}
+            {/* Playful logo reproducing reference style with Wedges font */}
             <div className="relative flex items-center justify-center">
               <div className="w-12 h-12 rounded-2xl bg-[#2B2FC7] flex items-center justify-center shadow-md transform group-hover:rotate-3 transition">
-                <span className="text-white font-black text-2xl tracking-tighter">m</span>
-                <span className="w-2.5 h-2.5 rounded-full bg-[#B4F000] ml-0.5"></span>
+                <span className="text-white font-wedges text-3xl leading-none pt-0.5">m</span>
+                <span className="w-2 h-2 rounded-full bg-[#B4F000] ml-0.5 mb-1"></span>
               </div>
               <div className="absolute -top-1.5 -right-1.5 w-5 h-5">
                 <MunamigoAvatar id="pompon" size="xs" />
@@ -89,10 +89,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             <div className="flex flex-col">
-              <span className="text-2xl md:text-3xl font-black text-[#0B1440] tracking-tight leading-none">
+              <span className="text-3xl md:text-4xl text-[#0B1440] font-wedges tracking-normal leading-none">
                 muna
               </span>
-              <span className="text-[11px] font-bold text-[#2B2FC7] tracking-wider uppercase">
+              <span className="text-[10px] font-bold text-[#2B2FC7] tracking-wider uppercase mt-0.5">
                 Aprender es un gran plan
               </span>
             </div>

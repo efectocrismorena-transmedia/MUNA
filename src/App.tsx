@@ -187,10 +187,10 @@ export default function App() {
             {/* Col 1: Brand & Munamigos */}
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-[#2B2FC7] flex items-center justify-center font-black text-xl text-white">
+                <div className="w-10 h-10 rounded-2xl bg-[#2B2FC7] flex items-center justify-center text-2xl text-white font-wedges pt-0.5">
                   m
                 </div>
-                <span className="text-2xl font-black tracking-tight text-white">muna</span>
+                <span className="text-3xl text-white font-wedges tracking-normal">muna</span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Aprender también es un gran plan. Plataforma educativa y preventiva sobre trastornos de la conducta alimentaria (TCA) para comunidades escolares y familias de la República Argentina.
