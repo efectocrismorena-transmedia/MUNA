@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ResourceItem, UserProfile, EducationalStage } from '../types';
 import { RESOURCES_LIST } from '../data/resources';
+import { NEW_INTERACTIVE_RESOURCES, InteractiveResourceDef } from '../data/newInteractiveResources';
+import { InteractiveResourceModal } from '../components/interactive/InteractiveResourceModal';
 import {
   FileText,
   Search,
@@ -11,7 +13,9 @@ import {
   Clock,
   CheckCircle2,
   Sparkles,
-  ArrowRight
+  ArrowRight,
+  Play,
+  Gamepad2
 } from 'lucide-react';
 
 interface ResourcesViewProps {
@@ -27,6 +31,7 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
   const [audienceFilter, setAudienceFilter] = useState<string>('all');
   const [stageFilter, setStageFilter] = useState<string>('all');
   const [formatFilter, setFormatFilter] = useState<string>('all');
+  const [activeInteractiveResource, setActiveInteractiveResource] = useState<InteractiveResourceDef | null>(null);
 
   // Favorites in localStorage
   const [favorites, setFavorites] = useState<string[]>(() => {
@@ -66,7 +71,10 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
     const matchesStage =
       stageFilter === 'all' || res.stages.includes(stageFilter as EducationalStage);
 
-    const matchesFormat = formatFilter === 'all' || res.format === formatFilter;
+    const isInteractive = NEW_INTERACTIVE_RESOURCES.some(r => r.id === res.id);
+    const matchesFormat =
+      formatFilter === 'all' ||
+      (formatFilter === 'interactivo' ? isInteractive : res.format === formatFilter);
 
     return matchesSearch && matchesAudience && matchesStage && matchesFormat;
   });
@@ -83,14 +91,14 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
             Materiales Prácticos, Fichas y Protocolos
           </h1>
           <p className="text-xs md:text-sm text-slate-200 leading-relaxed font-medium">
-            Todos los recursos pueden leerse en la web o abrirse en formato oficial listo para imprimir en papel o guardar en PDF. Sin enlaces vacíos ni botones decorativos.
+            Todos los recursos pueden leerse en la web o abrirse en formato oficial listo para imprimir en papel o guardar en PDF. Además, contás con 9 actividades digitales interactivas para cada etapa escolar.
           </p>
         </div>
         <div className="shrink-0 flex items-center gap-2 bg-white/10 p-4 rounded-3xl border border-white/20">
           <FileText className="w-10 h-10 text-[#B4F000]" />
           <div>
             <span className="text-2xl font-black text-white">{RESOURCES_LIST.length}</span>
-            <p className="text-[11px] text-slate-300 font-bold">Documentos Verificados</p>
+            <p className="text-[11px] text-slate-300 font-bold">Documentos y Actividades</p>
           </div>
         </div>
       </div>
@@ -104,7 +112,7 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
             type="text"
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
-            placeholder="Buscar por tema, palabra clave (ej. autoestima, publicidad, mesa)..."
+            placeholder="Buscar por tema, palabra clave (ej. autoestima, publicidad, mesa, emociones)..."
             className="w-full pl-12 pr-4 py-3 rounded-2xl border-2 border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#2B2FC7] text-sm text-[#0B1440]"
           />
         </div>
@@ -153,6 +161,7 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
               className="w-full text-xs p-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#2B2FC7] bg-white capitalize"
             >
               <option value="all">Todos los formatos</option>
+              <option value="interactivo">🎮 Actividades interactivas</option>
               <option value="guia">Guías prácticas</option>
               <option value="protocolo">Protocolos escolares</option>
               <option value="actividad">Secuencias y talleres</option>
@@ -171,17 +180,33 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
         ) : (
           filteredResources.map(res => {
             const isFav = favorites.includes(res.id);
+            const matchingInteractive = NEW_INTERACTIVE_RESOURCES.find(r => r.id === res.id);
+
             return (
               <div
                 key={res.id}
-                onClick={() => onOpenResource(res.id)}
+                onClick={() => {
+                  if (matchingInteractive) {
+                    setActiveInteractiveResource(matchingInteractive);
+                  } else {
+                    onOpenResource(res.id);
+                  }
+                }}
                 className="bubbly-card bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-[#2B2FC7] shadow-sm flex flex-col justify-between cursor-pointer group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-[10px] font-black px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 uppercase tracking-wider">
-                      {res.format}
-                    </span>
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span className="text-[10px] font-black px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 uppercase tracking-wider">
+                        {res.format}
+                      </span>
+                      {matchingInteractive && (
+                        <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-[#B4F000] text-[#0B1440] flex items-center gap-1">
+                          <Gamepad2 className="w-3 h-3" />
+                          <span>Interactivo</span>
+                        </span>
+                      )}
+                    </div>
                     <button
                       onClick={e => toggleFavorite(res.id, e)}
                       className={`p-1.5 rounded-full transition ${
@@ -212,18 +237,51 @@ export const ResourcesView: React.FC<ResourcesViewProps> = ({
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#2B2FC7] flex items-center gap-1">
-                    <Printer className="w-3.5 h-3.5" />
-                    <span>Ver e Imprimir</span>
-                  </span>
-                  <ArrowRight className="w-4 h-4 text-[#2B2FC7] transform group-hover:translate-x-1 transition" />
+                <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-2">
+                  {matchingInteractive ? (
+                    <>
+                      <button
+                        onClick={e => {
+                          e.stopPropagation();
+                          setActiveInteractiveResource(matchingInteractive);
+                        }}
+                        className="px-3 py-1.5 rounded-full bg-[#2B2FC7] text-white hover:bg-[#1f2294] text-xs font-black flex items-center gap-1.5 transition"
+                      >
+                        <Play className="w-3 h-3 fill-white" />
+                        <span>Jugar ahora</span>
+                      </button>
+                      <button
+                        onClick={e => {
+                          e.stopPropagation();
+                          onOpenResource(res.id);
+                        }}
+                        className="text-[11px] font-bold text-slate-500 hover:text-[#2B2FC7] flex items-center gap-1 transition"
+                      >
+                        <Printer className="w-3 h-3" />
+                        <span>Imprimir</span>
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <span className="text-xs font-bold text-[#2B2FC7] flex items-center gap-1">
+                        <Printer className="w-3.5 h-3.5" />
+                        <span>Ver e Imprimir</span>
+                      </span>
+                      <ArrowRight className="w-4 h-4 text-[#2B2FC7] transform group-hover:translate-x-1 transition" />
+                    </>
+                  )}
                 </div>
               </div>
             );
           })
         )}
       </div>
+
+      {/* Interactive Resource Modal */}
+      <InteractiveResourceModal
+        resource={activeInteractiveResource}
+        onClose={() => setActiveInteractiveResource(null)}
+      />
     </div>
   );
 };

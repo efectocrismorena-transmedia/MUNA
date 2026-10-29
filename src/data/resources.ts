@@ -227,5 +227,276 @@ export const RESOURCES_LIST: ResourceItem[] = [
       }
     ],
     isVerified: true
+  },
+  // --- 9 NUEVOS RECURSOS EDUCATIVOS MUNA ---
+  // 1. Jardín: Mi cuerpo hace cosas maravillosas
+  {
+    id: 'jardin-cuerpo-maravilloso',
+    title: 'Mi cuerpo hace cosas maravillosas',
+    description: 'Juego interactivo de asociación para reconocer que el cuerpo permite jugar, bailar, abrazar, aprender, descansar y explorar el mundo, sin comparaciones de peso ni tamaño.',
+    audience: ['familia', 'docente', 'estudiante'],
+    stages: ['inicial'],
+    category: 'Cuidado y valoración corporal',
+    format: 'actividad',
+    durationMinutes: 8,
+    materialsNeeded: 'Dispositivo digital o tarjetas ilustradas para el aula de nivel inicial.',
+    recommendedUse: 'Dinámica grupal o familiar para celebrar las capacidades del cuerpo sin juzgar la apariencia.',
+    printableTitle: 'MUNA — Ficha Inicial: Mi Cuerpo Hace Cosas Maravillosas',
+    printableSections: [
+      {
+        sectionTitle: 'Objetivo y mensaje central',
+        paragraphs: [
+          'Reconocer que el cuerpo humano es un compañero de aventuras que nos permite sentir, abrazar, correr, reír y descansar.',
+          'Mensaje final: «Tu cuerpo merece cuidado y respeto todos los días».'
+        ],
+        bulletPoints: [
+          'Celebrar lo que el cuerpo hace en lugar de clasificarlo por tamaño o forma.',
+          'Enseñar que el descanso es fundamental para crecer fuertes y sanos.',
+          'Fomentar abrazos y juegos compartidos en la sala de jardín.'
+        ]
+      }
+    ],
+    isVerified: true,
+    isPopular: true
+  },
+  // 2. Jardín: El arcoíris de las emociones
+  {
+    id: 'jardin-arcoiris-emociones',
+    title: 'El arcoíris de las emociones',
+    description: 'Cuento interactivo con decisiones guiado por Cora para identificar emociones (alegría, tristeza, enojo, miedo, vergüenza) y validar lo que sentimos.',
+    audience: ['familia', 'docente', 'estudiante'],
+    stages: ['inicial'],
+    category: 'Educación socioemocional temprana',
+    format: 'actividad',
+    durationMinutes: 10,
+    materialsNeeded: 'Cuento digital o títeres de Munamigos.',
+    recommendedUse: 'Para rondas de diálogo matutinas en el jardín o antes de dormir en el hogar.',
+    printableTitle: 'MUNA — Cuento Inicial: El Arcoíris de las Emociones con Cora',
+    printableSections: [
+      {
+        sectionTitle: 'Educación emocional sin respuestas incorrectas',
+        paragraphs: [
+          'Todas las emociones merecen un lugar seguro: el enojo ante la frustración, el miedo ante lo desconocido y la alegría de compartir.',
+          'Mensaje final: «Podemos sentir cosas diferentes y hablar de lo que nos pasa».'
+        ],
+        bulletPoints: [
+          'Acompañar sin forzar sonrisas inmediatas.',
+          'Aprender a buscar la mano de una persona adulta de confianza.',
+          'Validar la tristeza o el cansancio con paciencia.'
+        ]
+      }
+    ],
+    isVerified: true,
+    isPopular: true
+  },
+  // 3. Jardín: Cada uno tiene su magia
+  {
+    id: 'jardin-cada-uno-magia',
+    title: 'Cada uno tiene su magia',
+    description: 'Actividad creativa de descubrimiento personal con Titi para valorar las cualidades, habilidades y la diversidad de cada niño y niña.',
+    audience: ['familia', 'docente', 'estudiante'],
+    stages: ['inicial'],
+    category: 'Autoestima y convivencia',
+    format: 'actividad',
+    durationMinutes: 10,
+    materialsNeeded: 'Tarjetas de cualidades ilustradas o versión interactiva digital.',
+    recommendedUse: 'Actividad de integración grupal en salas de 4 y 5 años.',
+    printableTitle: 'MUNA — Taller Inicial: Cada Uno Tiene Su Magia',
+    printableSections: [
+      {
+        sectionTitle: 'Descubrir superpoderes cotidianos',
+        paragraphs: [
+          'Cada persona es especial por su curiosidad, su risa, su ternura y sus ganas de jugar, no por su apariencia física.',
+          'Mensaje final: «No tenemos que ser iguales para compartir y disfrutar».'
+        ],
+        bulletPoints: [
+          'Reconocer talentos variados: cantar, escuchar, compartir, dibujar.',
+          'Desterrar la necesidad de ser iguales para pertenecer al grupo.',
+          'Estimular la autoestima desde el afecto y la aceptación.'
+        ]
+      }
+    ],
+    isVerified: true
+  },
+  // 4. Primaria: Detectives de los mensajes
+  {
+    id: 'primaria-detectives-mensajes',
+    title: 'Detectives de los mensajes',
+    description: 'Juego de preguntas y pensamiento crítico con Mora para reconocer estereotipos en publicidades y comentarios sobre la comida o el peso.',
+    audience: ['docente', 'estudiante', 'familia'],
+    stages: ['primaria'],
+    category: 'Alfabetización mediática',
+    format: 'actividad',
+    durationMinutes: 12,
+    materialsNeeded: 'Lupa de detective Mora o proyector escolar.',
+    recommendedUse: 'Para clases de Ciencias Sociales, Formación Ética y Ciudadana o semanas ESI.',
+    printableTitle: 'MUNA — Taller Primaria: Detectives de los Mensajes con Mora',
+    printableSections: [
+      {
+        sectionTitle: 'Preguntas guía para pensar antes de creer',
+        paragraphs: [
+          'Aprender a preguntarse: ¿Quién creó este mensaje? ¿Es justo para todos? ¿Cómo podría hacernos sentir?',
+          'Mensaje final: «El valor de una persona nunca se mide por cómo luce».'
+        ],
+        bulletPoints: [
+          'Desmontar la promesa engañosa de productos mágicos.',
+          'Frenar la fiscalización del plato o vianda de los compañeros.',
+          'Valorar el esfuerzo colectivo por sobre las apariencias.'
+        ]
+      }
+    ],
+    isVerified: true,
+    isPopular: true
+  },
+  // 5. Primaria: El escudo de mis fortalezas
+  {
+    id: 'primaria-escudo-fortalezas',
+    title: 'El escudo de mis fortalezas',
+    description: 'Taller digital interactivo con Blu para construir un escudo protector con 4 cuadrantes: fortalezas, disfrute, redes de afecto y aprendizajes.',
+    audience: ['docente', 'estudiante', 'familia'],
+    stages: ['primaria'],
+    category: 'Autoestima y resiliencia',
+    format: 'actividad',
+    durationMinutes: 15,
+    materialsNeeded: 'Plantilla de escudo imprimible o versión interactiva.',
+    recommendedUse: 'Actividad individual reflexiva para fortalecer la autoconfianza escolar.',
+    printableTitle: 'MUNA — Taller Primaria: El Escudo de Mis Fortalezas con Blu',
+    printableSections: [
+      {
+        sectionTitle: 'Los cuatro cuadrantes de protección',
+        paragraphs: [
+          'Un escudo personal que recuerda nuestras herramientas internas y los vínculos que nos cuidan.',
+          'Mensaje final: «Tu escudo te recuerda quién sos y con qué redes de afecto contás cada día».'
+        ],
+        bulletPoints: [
+          'Cuadrante 1: Mis fortalezas (creatividad, perseverancia, escucha).',
+          'Cuadrante 2: Lo que disfruto (música, juegos, aire libre).',
+          'Cuadrante 3: Personas que me acompañan (familia, amigos, docentes).',
+          'Cuadrante 4: Cosas que estoy aprendiendo (poner límites, pedir ayuda).'
+        ]
+      }
+    ],
+    isVerified: true,
+    isPopular: true
+  },
+  // 6. Primaria: Palabras que cuidan
+  {
+    id: 'primaria-palabras-cuidan',
+    title: 'Palabras que cuidan',
+    description: 'Desafío interactivo de situaciones cotidianas con Cora para frenar burlas, apodos corporales y comentarios sobre la comida en la escuela.',
+    audience: ['docente', 'estudiante', 'familia'],
+    stages: ['primaria'],
+    category: 'Convivencia y empatía',
+    format: 'actividad',
+    durationMinutes: 12,
+    materialsNeeded: 'Tarjetas de situaciones y acta simbólica de convivencia.',
+    recommendedUse: 'Taller de convivencia escolar y prevención del acoso.',
+    printableTitle: 'MUNA — Taller Primaria: Palabras que Cuidan con Cora',
+    printableSections: [
+      {
+        sectionTitle: 'El poder de las palabras en el aula',
+        paragraphs: [
+          'Las palabras pueden herir o pueden cuidar. Elegir respuestas empáticas transforma el clima del aula.',
+          'Mensaje final: «Cuando elegimos palabras que cuidan, la escuela es un lugar más seguro para todos».'
+        ],
+        bulletPoints: [
+          'No sumarse a apodos ni risas cómplices sobre los cuerpos.',
+          'Intervenir con amabilidad y poner límites sin agresión.',
+          'Saber cuándo acudir al equipo docente o directivo.'
+        ]
+      }
+    ],
+    isVerified: true
+  },
+  // 7. Secundaria: Redes sin filtros
+  {
+    id: 'secundaria-redes-sin-filtros',
+    title: 'Redes sin filtros',
+    description: 'Simulador educativo de publicaciones ficticias con Lumi para analizar ideales inalcanzables, trucos de edición y algoritmos en redes sociales.',
+    audience: ['estudiante', 'docente', 'familia'],
+    stages: ['secundaria'],
+    category: 'Alfabetización digital y pensamiento crítico',
+    format: 'actividad',
+    durationMinutes: 15,
+    materialsNeeded: 'Dispositivo con acceso a la app MUNA o fichas de debate.',
+    recommendedUse: 'Secuencia didáctica para talleres ESI en ciclo básico y superior.',
+    printableTitle: 'MUNA — Taller Secundaria: Redes sin Filtros con Lumi',
+    printableSections: [
+      {
+        sectionTitle: 'Desarmar la ilusión digital',
+        paragraphs: [
+          'Las redes sociales presentan recortes milimétricamente producidos y editados. Aprender a detectarlo protege nuestra salud mental.',
+          'Mensaje final: «Las redes son un recorte editado, no el espejo de la realidad. Practicá la higiene digital y cuidá tu bienestar».'
+        ],
+        bulletPoints: [
+          'Detectar poses forzadas, iluminación artificial y filtros automáticos.',
+          'Cuestionar la asociación entre estética corporal y éxito personal.',
+          'Hacer limpieza periódica de cuentas que generen inseguridad.'
+        ]
+      }
+    ],
+    isVerified: true,
+    isPopular: true
+  },
+  // 8. Secundaria: Mitos bajo la lupa
+  {
+    id: 'secundaria-mitos-bajo-lupa',
+    title: 'Mitos bajo la lupa',
+    description: 'Cuestionario interactivo con explicaciones fundamentadas con Mora sobre la complejidad médica y psicológica de los TCA.',
+    audience: ['estudiante', 'docente', 'familia'],
+    stages: ['secundaria'],
+    category: 'Salud mental y desmitificación',
+    format: 'guia',
+    durationMinutes: 15,
+    materialsNeeded: 'Ficha de debate y acceso al directorio oficial de salud.',
+    recommendedUse: 'Para centros de estudiantes, tutorías y jornadas de salud integral.',
+    printableTitle: 'MUNA — Guía Secundaria: Mitos bajo la Lupa con Mora',
+    printableSections: [
+      {
+        sectionTitle: 'Verdades científicas sobre los TCA',
+        paragraphs: [
+          'Información rigurosa basada en la Sociedad Argentina de Pediatría (SAP), la OMS y la Ley 26.396.',
+          'Mensaje final: «Informarse con fuentes científicas es la mejor herramienta para derribar prejuicios y acompañar sin juzgar».'
+        ],
+        bulletPoints: [
+          'Los TCA atraviesan a personas de todos los géneros, edades y contexturas.',
+          'No se diagnostica a nadie por su aspecto exterior.',
+          'La recuperación requiere un equipo de salud interdisciplinario, no simple voluntad.'
+        ]
+      }
+    ],
+    isVerified: true,
+    isPopular: true
+  },
+  // 9. Secundaria: ¿Cómo acompaño a alguien?
+  {
+    id: 'secundaria-como-acompano',
+    title: '¿Cómo acompaño a alguien?',
+    description: 'Simulador de conversaciones con decisiones con Pompón y Cora para saber cómo estar presente para una amistad sin asumir el rol de terapeuta.',
+    audience: ['estudiante', 'docente', 'familia'],
+    stages: ['secundaria'],
+    category: 'Redes de pares y cuidado',
+    format: 'guia',
+    durationMinutes: 15,
+    materialsNeeded: 'Simulador interactivo MUNA.',
+    recommendedUse: 'Para tutorías, centros de estudiantes y talleres de pares.',
+    printableTitle: 'MUNA — Ficha Juvenil: ¿Cómo Acompaño a Alguien? con Pompón y Cora',
+    printableSections: [
+      {
+        sectionTitle: 'Acompañar con afecto y responsabilidad',
+        paragraphs: [
+          'Estar cerca no significa solucionar todo solos: significa escuchar sin juzgar y ser puente hacia adultos de confianza y profesionales.',
+          'Mensaje final: «Acompañar no significa tener la cura: significa estar presente, escuchar sin juzgar y tender puentes hacia la ayuda profesional».'
+        ],
+        bulletPoints: [
+          'Validar el dolor sin discutir sobre peso ni comida.',
+          'No vigilar ni fiscalizar platos ajenos.',
+          'Saber cuándo pedir ayuda urgente (Línea 141 y SAME 107 / 911).'
+        ]
+      }
+    ],
+    isVerified: true,
+    isPopular: true
   }
 ];
+

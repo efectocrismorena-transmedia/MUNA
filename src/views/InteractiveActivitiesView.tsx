@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { MunamigoAvatar } from '../components/MunamigoAvatar';
 import { MYTHS_AND_REALITIES_DATA } from '../data/educationalContent';
+import { NEW_INTERACTIVE_RESOURCES, InteractiveResourceDef } from '../data/newInteractiveResources';
+import { InteractiveResourceModal } from '../components/interactive/InteractiveResourceModal';
 import {
   CONVERSATION_SCENARIOS,
   EMOTIONAL_COMPASS_OPTIONS
@@ -14,11 +16,15 @@ import {
   Sliders,
   Heart,
   MessageCircle,
-  AlertCircle
+  AlertCircle,
+  Gamepad2,
+  Play,
+  Clock
 } from 'lucide-react';
 
 export const InteractiveActivitiesView: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'mitos' | 'filtros' | 'brujula' | 'conversaciones'>('mitos');
+  const [activeTab, setActiveTab] = useState<'recursos-etapas' | 'mitos' | 'filtros' | 'brujula' | 'conversaciones'>('recursos-etapas');
+  const [activeResourceModal, setActiveResourceModal] = useState<InteractiveResourceDef | null>(null);
 
   // Myth Buster State
   const [revealedMyths, setRevealedMyths] = useState<Record<number, boolean>>({});
@@ -57,7 +63,7 @@ export const InteractiveActivitiesView: React.FC = () => {
             Aprender Jugando, Reflexionando y Sintiendo
           </h1>
           <p className="text-xs md:text-sm text-slate-200 leading-relaxed font-medium">
-            Dinámicas interactivas para fortalecer la empatía, desmontar mandatos de belleza y entrenar la escucha atenta. Sin premios por adelgazar ni puntos por exponerse.
+            Dinámicas interactivas para fortalecer la empatía, desmitificar estereotipos y entrenar el cuidado. Sin notas, sin premios corporales y sin diagnósticos.
           </p>
         </div>
         <div className="shrink-0 bg-white/10 p-4 rounded-3xl border border-white/20">
@@ -70,6 +76,17 @@ export const InteractiveActivitiesView: React.FC = () => {
 
       {/* Tabs */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+        <button
+          onClick={() => setActiveTab('recursos-etapas')}
+          className={`px-4 py-2 rounded-full text-xs font-black whitespace-nowrap transition cursor-pointer flex items-center gap-1.5 ${
+            activeTab === 'recursos-etapas'
+              ? 'bg-[#2B2FC7] text-white shadow-sm'
+              : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
+          }`}
+        >
+          <Gamepad2 className="w-3.5 h-3.5" />
+          <span>9 Recursos por Etapa (Jardín, Primaria, Secundaria)</span>
+        </button>
         <button
           onClick={() => setActiveTab('mitos')}
           className={`px-4 py-2 rounded-full text-xs font-black whitespace-nowrap transition cursor-pointer ${
@@ -111,6 +128,146 @@ export const InteractiveActivitiesView: React.FC = () => {
           💬 Simulador de Diálogos Empáticos
         </button>
       </div>
+
+      {/* Tab: 9 Recursos por Etapa */}
+      {activeTab === 'recursos-etapas' && (
+        <div className="space-y-10 animate-fadeIn">
+          {/* Nivel Inicial (Jardín) */}
+          <div className="bg-white rounded-3xl p-6 md:p-8 border-2 border-[#FF6B4A]/30 space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span className="text-xs font-black uppercase tracking-wider text-[#FF6B4A]">
+                  3 a 5 años
+                </span>
+                <h3 className="text-xl font-black text-[#0B1440]">Nivel Inicial (Jardín) — 3 Recursos</h3>
+              </div>
+              <span className="text-xs font-bold text-slate-500">Visuales, lúdicos y afectivos</span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {NEW_INTERACTIVE_RESOURCES.filter(r => r.stage === 'inicial').map(resource => (
+                <div
+                  key={resource.id}
+                  className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#FF6B4A] transition flex flex-col justify-between space-y-3"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <MunamigoAvatar id={resource.leadCharacter} size="xs" />
+                        <span className="text-xs font-bold text-[#0B1440] capitalize">{resource.leadCharacter}</span>
+                      </div>
+                      <span className="text-[10px] text-slate-500 font-bold">{resource.estimatedMinutes} min</span>
+                    </div>
+                    <h4 className="text-base font-black text-[#0B1440]">{resource.title}</h4>
+                    <p className="text-xs text-slate-600 line-clamp-2">{resource.description}</p>
+                    <div className="p-2 bg-white rounded-xl text-[11px] text-slate-700 border border-slate-200/80">
+                      🎯 {resource.objective}
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => setActiveResourceModal(resource)}
+                    className="w-full py-2 px-3 rounded-full bg-[#FF6B4A] hover:bg-[#e65a39] text-white text-xs font-black flex items-center justify-center gap-1.5 cursor-pointer shadow-sm transition"
+                  >
+                    <Play className="w-3 h-3 fill-white" />
+                    <span>Jugar actividad</span>
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Nivel Primario */}
+          <div className="bg-white rounded-3xl p-6 md:p-8 border-2 border-[#2B2FC7]/30 space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span className="text-xs font-black uppercase tracking-wider text-[#2B2FC7]">
+                  6 a 12 años
+                </span>
+                <h3 className="text-xl font-black text-[#0B1440]">Nivel Primario — 3 Recursos</h3>
+              </div>
+              <span className="text-xs font-bold text-slate-500">Autoestima, medios y convivencia</span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {NEW_INTERACTIVE_RESOURCES.filter(r => r.stage === 'primaria').map(resource => (
+                <div
+                  key={resource.id}
+                  className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#2B2FC7] transition flex flex-col justify-between space-y-3"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <MunamigoAvatar id={resource.leadCharacter} size="xs" />
+                        <span className="text-xs font-bold text-[#0B1440] capitalize">{resource.leadCharacter}</span>
+                      </div>
+                      <span className="text-[10px] text-slate-500 font-bold">{resource.estimatedMinutes} min</span>
+                    </div>
+                    <h4 className="text-base font-black text-[#0B1440]">{resource.title}</h4>
+                    <p className="text-xs text-slate-600 line-clamp-2">{resource.description}</p>
+                    <div className="p-2 bg-white rounded-xl text-[11px] text-slate-700 border border-slate-200/80">
+                      🎯 {resource.objective}
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => setActiveResourceModal(resource)}
+                    className="w-full py-2 px-3 rounded-full bg-[#2B2FC7] hover:bg-[#1f2294] text-white text-xs font-black flex items-center justify-center gap-1.5 cursor-pointer shadow-sm transition"
+                  >
+                    <Play className="w-3 h-3 fill-white" />
+                    <span>Jugar actividad</span>
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Nivel Secundario */}
+          <div className="bg-white rounded-3xl p-6 md:p-8 border-2 border-[#0B1440]/30 space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+              <div>
+                <span className="text-xs font-black uppercase tracking-wider text-[#0B1440]">
+                  13 a 18 años
+                </span>
+                <h3 className="text-xl font-black text-[#0B1440]">Nivel Secundario — 3 Recursos</h3>
+              </div>
+              <span className="text-xs font-bold text-slate-500">Redes, evidencia científica y redes de pares</span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {NEW_INTERACTIVE_RESOURCES.filter(r => r.stage === 'secundaria').map(resource => (
+                <div
+                  key={resource.id}
+                  className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#0B1440] transition flex flex-col justify-between space-y-3"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <MunamigoAvatar id={resource.leadCharacter} size="xs" />
+                        <span className="text-xs font-bold text-[#0B1440] capitalize">{resource.leadCharacter}</span>
+                      </div>
+                      <span className="text-[10px] text-slate-500 font-bold">{resource.estimatedMinutes} min</span>
+                    </div>
+                    <h4 className="text-base font-black text-[#0B1440]">{resource.title}</h4>
+                    <p className="text-xs text-slate-600 line-clamp-2">{resource.description}</p>
+                    <div className="p-2 bg-white rounded-xl text-[11px] text-slate-700 border border-slate-200/80">
+                      🎯 {resource.objective}
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => setActiveResourceModal(resource)}
+                    className="w-full py-2 px-3 rounded-full bg-[#0B1440] hover:bg-slate-800 text-white text-xs font-black flex items-center justify-center gap-1.5 cursor-pointer shadow-sm transition"
+                  >
+                    <Play className="w-3 h-3 fill-white" />
+                    <span>Jugar actividad</span>
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Activity 1: Mitos y Realidades */}
       {activeTab === 'mitos' && (
@@ -469,6 +626,12 @@ export const InteractiveActivitiesView: React.FC = () => {
           )}
         </div>
       )}
+
+      {/* Interactive Resource Modal */}
+      <InteractiveResourceModal
+        resource={activeResourceModal}
+        onClose={() => setActiveResourceModal(null)}
+      />
     </div>
   );
 };

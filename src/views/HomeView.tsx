@@ -291,13 +291,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Descubrir que todos los cuerpos merecen respeto, reconocer sensaciones corporales (hambre/saciedad) y aprender a nombrar emociones sin reglas rígidas.
               </p>
               <div className="text-xs text-slate-500 space-y-1">
-                <p>• Cuentos ilustrados interactivos</p>
-                <p>• Juegos de mímica y emociones con Cora</p>
-                <p>• Guía de hábitos sin moralina para familias</p>
+                <p>• «Mi cuerpo hace cosas maravillosas» (con Pompón)</p>
+                <p>• «El arcoíris de las emociones» (con Cora)</p>
+                <p>• «Cada uno tiene su magia» (con Titi)</p>
               </div>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#FF6B4A]">
-              <span>Explorar Jardín</span>
+              <span>Explorar 3 actividades de Jardín</span>
               <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition" />
             </div>
           </div>
@@ -321,13 +321,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Crecimiento corporal en la pubertad, prevención del bullying y burlas por apariencia, y análisis crítico de la publicidad y mandatos de belleza.
               </p>
               <div className="text-xs text-slate-500 space-y-1">
-                <p>• Taller de cazadores de mitos con Mora</p>
-                <p>• Actividades de convivencia y autoestima</p>
-                <p>• Articulación con los 5 ejes de la ESI</p>
+                <p>• «Detectives de los mensajes» (con Mora)</p>
+                <p>• «El escudo de mis fortalezas» (con Blu)</p>
+                <p>• «Palabras que cuidan» (con Cora)</p>
               </div>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#2B2FC7]">
-              <span>Explorar Primaria</span>
+              <span>Explorar 3 actividades de Primaria</span>
               <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition" />
             </div>
           </div>
@@ -351,13 +351,13 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Presión social, filtros en redes, algoritmos, perfeccionismo, cómo acompañar a un amigo/a sin ponerse en rol de terapeuta y dónde buscar ayuda confidencial.
               </p>
               <div className="text-xs text-slate-500 space-y-1">
-                <p>• Casos interactivos de toma de decisiones</p>
-                <p>• Desmitificación de dietas y desinformación</p>
-                <p>• Canales gratuitos 24hs en Argentina</p>
+                <p>• «Redes sin filtros» (con Lumi)</p>
+                <p>• «Mitos bajo la lupa» (con Mora)</p>
+                <p>• «¿Cómo acompaño a alguien?» (con Pompón)</p>
               </div>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0B1440]">
-              <span>Explorar Secundaria</span>
+              <span>Explorar 3 actividades de Secundaria</span>
               <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition" />
             </div>
           </div>

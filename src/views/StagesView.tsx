@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { EducationalStage, MunamigoId } from '../types';
 import { EDUCATIONAL_STAGES_DATA } from '../data/educationalContent';
+import { NEW_INTERACTIVE_RESOURCES, InteractiveResourceDef } from '../data/newInteractiveResources';
+import { InteractiveResourceModal } from '../components/interactive/InteractiveResourceModal';
 import { MunamigoAvatar } from '../components/MunamigoAvatar';
-import { Sparkles, BookOpen, Heart, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Sparkles, BookOpen, Heart, CheckCircle2, ArrowRight, Play, Clock, FileText, Gamepad2 } from 'lucide-react';
 
 interface StagesViewProps {
   onOpenResource: (resourceId: string) => void;
@@ -14,8 +16,10 @@ export const StagesView: React.FC<StagesViewProps> = ({
   onNavigate
 }) => {
   const [activeStage, setActiveStage] = useState<EducationalStage>('inicial');
+  const [activeInteractiveModal, setActiveInteractiveModal] = useState<InteractiveResourceDef | null>(null);
 
   const currentStageData = EDUCATIONAL_STAGES_DATA[activeStage];
+  const stageInteractiveResources = NEW_INTERACTIVE_RESOURCES.filter(r => r.stage === activeStage);
 
   return (
     <div className="space-y-10 pb-16">
@@ -95,7 +99,7 @@ export const StagesView: React.FC<StagesViewProps> = ({
       </div>
 
       {/* Active Stage Detailed Experience */}
-      <div className="bg-white rounded-[2.5rem] p-6 md:p-10 border-2 border-slate-200 shadow-sm space-y-8 animate-fadeIn">
+      <div className="bg-white rounded-[2.5rem] p-6 md:p-10 border-2 border-slate-200 shadow-sm space-y-10 animate-fadeIn">
         {/* Objective banner */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 rounded-3xl bg-[#FFFBEB] border-2 border-amber-200">
           <div className="space-y-1">
@@ -113,6 +117,89 @@ export const StagesView: React.FC<StagesViewProps> = ({
             <MunamigoAvatar id={currentStageData.leadCharacter as MunamigoId} size="md" />
             {currentStageData.supportingCharacters.map(cId => (
               <MunamigoAvatar key={cId} id={cId as MunamigoId} size="sm" />
+            ))}
+          </div>
+        </div>
+
+        {/* 3 NUEVOS RECURSOS INTERACTIVOS DE ESTA ETAPA */}
+        <div className="space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-3">
+            <div>
+              <span className="text-xs font-black uppercase tracking-wider text-[#2B2FC7] bg-[#2B2FC7]/10 px-3 py-1 rounded-full">
+                3 Actividades Interactivas Originales
+              </span>
+              <h3 className="text-xl md:text-2xl font-black text-[#0B1440] mt-1.5 flex items-center gap-2">
+                <Gamepad2 className="w-6 h-6 text-[#2B2FC7]" />
+                <span>Recursos Educativos Digitales ({currentStageData.name})</span>
+              </h3>
+            </div>
+            <span className="text-xs text-slate-500 font-medium">
+              Listas para jugar en pantalla, con retroalimentación y sin calificar
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+            {stageInteractiveResources.map(resource => (
+              <div
+                key={resource.id}
+                className="bubbly-card bg-slate-50 hover:bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-[#2B2FC7] shadow-sm flex flex-col justify-between transition group"
+              >
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2.5">
+                      <MunamigoAvatar id={resource.leadCharacter} size="sm" />
+                      <div>
+                        <span className="text-xs font-black text-[#0B1440] capitalize block">
+                          Con {resource.leadCharacter}
+                        </span>
+                        <span className="text-[10px] text-slate-500 font-bold flex items-center gap-1">
+                          <Clock className="w-3 h-3" />
+                          <span>{resource.estimatedMinutes} min aprox.</span>
+                        </span>
+                      </div>
+                    </div>
+                    <span className={`text-[10px] font-black px-2.5 py-1 rounded-full ${resource.badgeColor}`}>
+                      {resource.format}
+                    </span>
+                  </div>
+
+                  <div>
+                    <h4 className="text-base sm:text-lg font-black text-[#0B1440] group-hover:text-[#2B2FC7] transition leading-snug">
+                      {resource.title}
+                    </h4>
+                    <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                      {resource.description}
+                    </p>
+                  </div>
+
+                  <div className="p-3 bg-white rounded-2xl border border-slate-200 space-y-1.5 text-[11px]">
+                    <p className="text-[#0B1440] font-bold">
+                      🎯 <span className="text-slate-700 font-medium">{resource.objective}</span>
+                    </p>
+                    <p className="text-slate-600">
+                      💡 <strong>Consigna:</strong> {resource.instructions}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="pt-4 mt-4 border-t border-slate-200/80 space-y-2">
+                  <button
+                    onClick={() => setActiveInteractiveModal(resource)}
+                    className="w-full bubbly-btn py-2.5 px-4 bg-[#2B2FC7] hover:bg-[#1f2294] text-white font-black text-xs flex items-center justify-center gap-2 cursor-pointer shadow-sm transition"
+                  >
+                    <Play className="w-3.5 h-3.5 fill-white" />
+                    <span>¡Comenzar actividad interactiva!</span>
+                  </button>
+
+                  <button
+                    onClick={() => onOpenResource(resource.id)}
+                    className="w-full text-center text-[11px] font-bold text-slate-500 hover:text-[#2B2FC7] transition py-1 flex items-center justify-center gap-1 cursor-pointer"
+                  >
+                    <FileText className="w-3 h-3" />
+                    <span>Ver ficha de clase e imprimir</span>
+                  </button>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -176,6 +263,16 @@ export const StagesView: React.FC<StagesViewProps> = ({
           </p>
         </div>
       </div>
+
+      {/* Modal interactivo de la actividad */}
+      <InteractiveResourceModal
+        resource={activeInteractiveModal}
+        onClose={() => setActiveInteractiveModal(null)}
+        onNavigateToResources={() => {
+          setActiveInteractiveModal(null);
+          onNavigate('resources');
+        }}
+      />
     </div>
   );
 };
