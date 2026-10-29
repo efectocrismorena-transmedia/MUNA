@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#0B1440" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background tile matching MUNA's royal blue badge -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#2B2FC7" stroke="#4348E8" stroke-width="1.5"/>
+
+  <!-- Pompón accent peeking from top-right corner -->
+  <g transform="translate(42, 3) scale(0.24)">
+    <circle cx="21" cy="48" r="6" fill="#FF7300" />
+    <circle cx="79" cy="48" r="6" fill="#FF7300" />
+    <circle cx="50" cy="48" r="30" fill="#FF7300" />
+    <ellipse cx="42" cy="45" rx="3.5" ry="5.5" fill="#0B1440" />
+    <circle cx="43.2" cy="43.2" r="1.5" fill="#FFFFFF" />
+    <ellipse cx="58" cy="45" rx="3.5" ry="5.5" fill="#0B1440" />
+    <circle cx="59.2" cy="43.2" r="1.5" fill="#FFFFFF" />
+    <path d="M 46 53 Q 50 57 54 53" stroke="#0B1440" stroke-width="2.6" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Chunky, playful lowercase "m" matching Wedges typography -->
+  <!-- Left stem, center arch, right arch -->
+  <g fill="#FFFFFF" filter="url(#shadow)">
+    <!-- Left vertical stem -->
+    <path d="M 12 25 C 12 22 15 22 16.5 22 C 18 22 19 23.5 19 26 L 19 44 C 19 46.5 17 47.5 15.5 47.5 C 13.5 47.5 12 46 12 44 Z" />
+    
+    <!-- Middle arch & stem -->
+    <path d="M 17 29 C 18.5 24 23 21 27.5 21 C 31.5 21 34.5 23.5 35.5 27.5 C 37 23.5 41 21 45.5 21 C 49.5 21 53 23.5 53 28.5 L 53 43.5 C 53 46 51 47.5 49 47.5 C 47.5 47.5 46 46 46 43.5 L 46 30 C 46 27.5 44 26 42 26 C 39.5 26 37.5 27.8 37.5 31 L 37.5 43.5 C 37.5 46 35.5 47.5 33.5 47.5 C 32 47.5 30.5 46 30.5 43.5 L 30.5 30 C 30.5 27.5 28.5 26 26.5 26 C 24 26 22 28 22 31.5 L 22 43.5 C 22 46 20.5 47.5 18.5 47.5 C 17.5 47.5 16 46.8 15.5 45 L 17 29 Z" />
+  </g>
+
+  <!-- Lime accent dot (#B4F000) -->
+  <circle cx="53" cy="44.5" r="3.5" fill="#B4F000" stroke="#2B2FC7" stroke-width="1" />
+</svg>
