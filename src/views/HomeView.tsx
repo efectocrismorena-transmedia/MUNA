@@ -19,6 +19,50 @@ import {
   Sparkle
 } from 'lucide-react';
 
+const MUNAMIGO_THEMES: Record<MunamigoId, {
+  textColor: string;
+  borderColor: string;
+  bgColor: string;
+  glow: string;
+}> = {
+  pompon: {
+    textColor: '#FF6B00',
+    borderColor: '#FF7300',
+    bgColor: '#FFF5EB',
+    glow: '0 6px 18px rgba(255, 115, 0, 0.28)'
+  },
+  lumi: {
+    textColor: '#5BA800',
+    borderColor: '#7FD800',
+    bgColor: '#F3FEE7',
+    glow: '0 6px 18px rgba(127, 216, 0, 0.28)'
+  },
+  mora: {
+    textColor: '#2458F5',
+    borderColor: '#2458F5',
+    bgColor: '#EEF3FF',
+    glow: '0 6px 18px rgba(36, 88, 245, 0.28)'
+  },
+  cora: {
+    textColor: '#FF3E96',
+    borderColor: '#FF3E96',
+    bgColor: '#FFF0F7',
+    glow: '0 6px 18px rgba(255, 62, 150, 0.28)'
+  },
+  titi: {
+    textColor: '#D98200',
+    borderColor: '#FFBA00',
+    bgColor: '#FFFBE8',
+    glow: '0 6px 18px rgba(255, 186, 0, 0.32)'
+  },
+  blu: {
+    textColor: '#009BE8',
+    borderColor: '#33B5FF',
+    bgColor: '#EDF8FF',
+    glow: '0 6px 18px rgba(51, 181, 255, 0.28)'
+  }
+};
+
 interface HomeViewProps {
   onNavigate: (view: string) => void;
   activeProfile: UserProfile;
@@ -120,27 +164,27 @@ export const HomeView: React.FC<HomeViewProps> = ({
               {/* Characters showcase row (all 6 flat 2D Munamigos side by side) */}
               <div className="grid grid-cols-6 gap-2 sm:gap-3 items-end justify-center py-3 w-full">
                 <div className="flex flex-col items-center">
-                  <MunamigoAvatar id="pompon" size="sm" interactive onClick={() => setSelectedMunamigo('pompon')} />
+                  <MunamigoAvatar id="pompon" size="sm" />
                   <span className="text-[10px] font-bold text-slate-700 mt-1">Pompón</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <MunamigoAvatar id="lumi" size="sm" interactive onClick={() => setSelectedMunamigo('lumi')} />
+                  <MunamigoAvatar id="lumi" size="sm" />
                   <span className="text-[10px] font-bold text-slate-700 mt-1">Lumi</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <MunamigoAvatar id="mora" size="sm" interactive onClick={() => setSelectedMunamigo('mora')} />
+                  <MunamigoAvatar id="mora" size="sm" />
                   <span className="text-[10px] font-bold text-slate-700 mt-1">Mora</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <MunamigoAvatar id="cora" size="sm" interactive onClick={() => setSelectedMunamigo('cora')} />
+                  <MunamigoAvatar id="cora" size="sm" />
                   <span className="text-[10px] font-bold text-slate-700 mt-1">Cora</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <MunamigoAvatar id="titi" size="sm" interactive onClick={() => setSelectedMunamigo('titi')} />
+                  <MunamigoAvatar id="titi" size="sm" />
                   <span className="text-[10px] font-bold text-slate-700 mt-1">Titi</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <MunamigoAvatar id="blu" size="sm" interactive onClick={() => setSelectedMunamigo('blu')} />
+                  <MunamigoAvatar id="blu" size="sm" />
                   <span className="text-[10px] font-bold text-slate-700 mt-1">Blu</span>
                 </div>
               </div>
@@ -173,24 +217,35 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </p>
         </div>
 
-        {/* Characters Tabs matching Reference 2 */}
+        {/* Characters Tabs with character-specific illumination when touched */}
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 md:gap-3 mb-6">
           {MUNAMIGOS_LIST.map(friend => {
             const isSelected = selectedMunamigo === friend.id;
+            const theme = MUNAMIGO_THEMES[friend.id];
             return (
               <button
                 key={friend.id}
                 onClick={() => setSelectedMunamigo(friend.id)}
+                style={
+                  isSelected
+                    ? {
+                        backgroundColor: theme.bgColor,
+                        borderColor: theme.borderColor,
+                        boxShadow: `0 8px 22px ${theme.glow}, 0 0 0 1px ${theme.borderColor}`
+                      }
+                    : undefined
+                }
                 className={`py-3 px-3 rounded-2xl flex flex-col items-center justify-center transition-all cursor-pointer ${
                   isSelected
-                    ? 'bg-[#FFFBEB] border-2 border-[#FFBA00] shadow-sm scale-105'
-                    : 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-200'
+                    ? 'border-2 scale-105 shadow-sm'
+                    : 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 hover:border-slate-300'
                 }`}
               >
                 <MunamigoAvatar id={friend.id} size="sm" />
                 <span
-                  className={`text-xs font-black mt-2 capitalize ${
-                    isSelected ? 'text-[#FF7300]' : 'text-slate-800'
+                  style={isSelected ? { color: theme.textColor } : undefined}
+                  className={`text-xs font-black mt-2 capitalize transition-colors ${
+                    isSelected ? '' : 'text-slate-800'
                   }`}
                 >
                   {friend.name}
