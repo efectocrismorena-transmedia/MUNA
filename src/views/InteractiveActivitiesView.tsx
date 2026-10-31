@@ -66,9 +66,9 @@ export const InteractiveActivitiesView: React.FC = () => {
             Dinámicas interactivas para fortalecer la empatía, desmitificar estereotipos y entrenar el cuidado. Sin notas, sin premios corporales y sin diagnósticos.
           </p>
         </div>
-        <div className="shrink-0 bg-white/10 p-4 rounded-3xl border border-white/20">
+        <div className="shrink-0 bg-white/10 p-4 rounded-3xl border border-white/20 flex flex-col items-center justify-center text-center self-center min-w-[160px]">
           <MunamigoAvatar id="cora" size="lg" />
-          <p className="text-center text-[11px] font-bold text-[#FF80C5] mt-1">
+          <p className="text-center text-[11px] font-bold text-[#FF80C5] mt-2 w-full">
             Cora acompaña tus emociones
           </p>
         </div>

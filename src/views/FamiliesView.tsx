@@ -90,9 +90,9 @@ export const FamiliesView: React.FC<FamiliesViewProps> = ({
             Respuestas prácticas, frases cotidianas y orientaciones para madres, padres y cuidadores en Argentina. Porque el hogar puede ser el refugio más seguro.
           </p>
         </div>
-        <div className="shrink-0 bg-white/20 p-4 rounded-3xl backdrop-blur-sm">
+        <div className="shrink-0 bg-white/20 p-4 rounded-3xl backdrop-blur-sm border border-white/20 flex flex-col items-center justify-center text-center self-center min-w-[160px]">
           <MunamigoAvatar id="pompon" size="lg" />
-          <p className="text-center text-[11px] font-bold text-white mt-1">
+          <p className="text-center text-[11px] font-bold text-white mt-2 w-full">
             Pompón te abraza y acompaña
           </p>
         </div>

@@ -59,9 +59,9 @@ export const LearnView: React.FC<LearnViewProps> = ({ onOpenModule }) => {
             Módulos interactivos elaborados bajo el modelo biopsicosocial y la Ley Nacional 26.396. Información rigurosa, no estigmatizante y sin descripciones que puedan fomentar conductas de riesgo.
           </p>
         </div>
-        <div className="shrink-0 bg-white/10 p-4 rounded-3xl border border-white/20">
+        <div className="shrink-0 bg-white/10 p-4 rounded-3xl border border-white/20 flex flex-col items-center justify-center text-center self-center min-w-[160px]">
           <MunamigoAvatar id="mora" size="lg" />
-          <p className="text-center text-[11px] font-bold text-[#B4F000] mt-1">
+          <p className="text-center text-[11px] font-bold text-[#B4F000] mt-2 w-full">
             Mora investiga y guía
           </p>
         </div>

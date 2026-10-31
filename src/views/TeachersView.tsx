@@ -126,9 +126,9 @@ export const TeachersView: React.FC<TeachersViewProps> = ({
             Herramientas pedagógicas, secuencias ESI y protocolos orientativos de actuación escolar. El aula como espacio de cuidado, convivencia y respeto por la diversidad.
           </p>
         </div>
-        <div className="shrink-0 bg-white/10 p-4 rounded-3xl border border-white/20">
+        <div className="shrink-0 bg-white/10 p-4 rounded-3xl border border-white/20 flex flex-col items-center justify-center text-center self-center min-w-[160px]">
           <MunamigoAvatar id="mora" size="lg" />
-          <p className="text-center text-[11px] font-bold text-[#B4F000] mt-1">
+          <p className="text-center text-[11px] font-bold text-[#B4F000] mt-2 w-full">
             Mora y la pedagogía crítica
           </p>
         </div>

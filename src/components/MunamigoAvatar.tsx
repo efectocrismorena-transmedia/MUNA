@@ -162,7 +162,7 @@ export const MunamigoAvatar: React.FC<MunamigoAvatarProps> = ({
   return (
     <div
       onClick={onClick}
-      className={`inline-flex flex-col items-center justify-center transition-transform ${
+      className={`inline-flex flex-col items-center justify-center mx-auto transition-transform ${
         interactive ? 'cursor-pointer hover:scale-105 active:scale-95' : ''
       } ${className}`}
     >

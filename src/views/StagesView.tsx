@@ -36,9 +36,9 @@ export const StagesView: React.FC<StagesViewProps> = ({
             No se previene de la misma manera en la sala de 4 años que en 4to año de la secundaria. Descubrí propuestas y actividades pensadas para cada ciclo.
           </p>
         </div>
-        <div className="shrink-0 bg-white/20 p-4 rounded-3xl backdrop-blur-sm">
+        <div className="shrink-0 bg-white/20 p-4 rounded-3xl backdrop-blur-sm border border-white/20 flex flex-col items-center justify-center text-center self-center min-w-[160px]">
           <MunamigoAvatar id={currentStageData.leadCharacter as MunamigoId} size="lg" />
-          <p className="text-center text-[11px] font-bold text-white mt-1 capitalize">
+          <p className="text-center text-[11px] font-bold text-white mt-2 w-full capitalize">
             {currentStageData.leadCharacter} te guía
           </p>
         </div>
