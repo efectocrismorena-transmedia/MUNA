@@ -8,6 +8,7 @@ interface MunamigoAvatarProps {
   showName?: boolean;
   showQuote?: boolean;
   interactive?: boolean;
+  animateOnHover?: boolean;
   onClick?: () => void;
 }
 
@@ -18,6 +19,7 @@ export const MunamigoAvatar: React.FC<MunamigoAvatarProps> = ({
   showName = false,
   showQuote = false,
   interactive = false,
+  animateOnHover = true,
   onClick
 }) => {
   const sizeMap = {
@@ -102,7 +104,7 @@ export const MunamigoAvatar: React.FC<MunamigoAvatarProps> = ({
           <svg viewBox="0 0 100 100" className="w-full h-full select-none" fill="none" xmlns="http://www.w3.org/2000/svg">
             {/* Side horizontal bar arms */}
             <rect x="13" y="38" width="14" height="5" rx="2.5" fill="#FF3E96" />
-            <rect x="73" y="38" width="14" height="5" rx="2.5" fill="#FF3E96" />
+            <rect x="73" y="38" width="14" height="5" rx="2.5" fill="#FF3E96" className="munamigo-arm-wave" />
             {/* Heart body */}
             <path
               d="M 50 68 
@@ -162,11 +164,11 @@ export const MunamigoAvatar: React.FC<MunamigoAvatarProps> = ({
   return (
     <div
       onClick={onClick}
-      className={`inline-flex flex-col items-center justify-center mx-auto transition-transform ${
+      className={`${animateOnHover ? 'munamigo-avatar group/munamigo' : 'no-munamigo-anim'} inline-flex flex-col items-center justify-center mx-auto transition-transform ${
         interactive ? 'cursor-pointer hover:scale-105 active:scale-95' : ''
       } ${className}`}
     >
-      <div className={`relative ${sizeMap[size]} flex items-center justify-center`}>
+      <div className={`relative ${sizeMap[size]} flex items-center justify-center ${animateOnHover ? `munamigo-body munamigo-body-${id}` : ''}`}>
         {renderSVG()}
       </div>
       {showName && (

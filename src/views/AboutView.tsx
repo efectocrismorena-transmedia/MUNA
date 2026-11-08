@@ -148,10 +148,10 @@ export const AboutView: React.FC = () => {
               {munamigosTeam.map(friend => (
                 <div
                   key={friend.id}
-                  className="p-3 rounded-2xl bg-[#FFFBEB] border border-amber-200/80 flex flex-col items-center justify-center transition-all hover:scale-105"
+                  className="group p-3 rounded-2xl bg-[#FFFBEB] border border-amber-200/80 flex flex-col items-center justify-center transition-all hover:scale-105 hover:border-amber-300 hover:shadow-sm cursor-pointer select-none"
                 >
                   <MunamigoAvatar id={friend.id} size="sm" />
-                  <span className="text-xs font-black text-[#0B1440] mt-1.5">{friend.name}</span>
+                  <span className="text-xs font-black text-[#0B1440] mt-1.5 transition-colors group-hover:text-[#2B2FC7]">{friend.name}</span>
                 </div>
               ))}
             </div>

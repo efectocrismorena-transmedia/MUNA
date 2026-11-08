@@ -83,8 +83,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <span className="text-white font-wedges text-3xl leading-none pt-0.5">m</span>
                 <span className="w-2 h-2 rounded-full bg-[#B4F000] ml-0.5 mb-1"></span>
               </div>
-              <div className="absolute -top-1.5 -right-1.5 w-5 h-5">
-                <MunamigoAvatar id="pompon" size="xs" />
+              <div className="absolute -top-1.5 -right-1.5 w-5 h-5 transition-transform group-hover:scale-110">
+                <MunamigoAvatar id="pompon" size="xs" animateOnHover={false} />
               </div>
             </div>
 

@@ -163,29 +163,29 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="relative w-full p-6 bg-white/90 rounded-[2.5rem] shadow-xl border-4 border-white flex flex-col items-center">
               {/* Characters showcase row (all 6 flat 2D Munamigos side by side) */}
               <div className="grid grid-cols-6 gap-2 sm:gap-3 items-end justify-center py-3 w-full">
-                <div className="flex flex-col items-center">
+                <div className="group flex flex-col items-center cursor-pointer select-none">
                   <MunamigoAvatar id="pompon" size="sm" />
-                  <span className="text-[10px] font-bold text-slate-700 mt-1">Pompón</span>
+                  <span className="text-[10px] font-bold text-slate-700 mt-1 transition-colors group-hover:text-[#FF7300]">Pompón</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="group flex flex-col items-center cursor-pointer select-none">
                   <MunamigoAvatar id="lumi" size="sm" />
-                  <span className="text-[10px] font-bold text-slate-700 mt-1">Lumi</span>
+                  <span className="text-[10px] font-bold text-slate-700 mt-1 transition-colors group-hover:text-[#5BA800]">Lumi</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="group flex flex-col items-center cursor-pointer select-none">
                   <MunamigoAvatar id="mora" size="sm" />
-                  <span className="text-[10px] font-bold text-slate-700 mt-1">Mora</span>
+                  <span className="text-[10px] font-bold text-slate-700 mt-1 transition-colors group-hover:text-[#2458F5]">Mora</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="group flex flex-col items-center cursor-pointer select-none">
                   <MunamigoAvatar id="cora" size="sm" />
-                  <span className="text-[10px] font-bold text-slate-700 mt-1">Cora</span>
+                  <span className="text-[10px] font-bold text-slate-700 mt-1 transition-colors group-hover:text-[#FF3E96]">Cora</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="group flex flex-col items-center cursor-pointer select-none">
                   <MunamigoAvatar id="titi" size="sm" />
-                  <span className="text-[10px] font-bold text-slate-700 mt-1">Titi</span>
+                  <span className="text-[10px] font-bold text-slate-700 mt-1 transition-colors group-hover:text-[#D98200]">Titi</span>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="group flex flex-col items-center cursor-pointer select-none">
                   <MunamigoAvatar id="blu" size="sm" />
-                  <span className="text-[10px] font-bold text-slate-700 mt-1">Blu</span>
+                  <span className="text-[10px] font-bold text-slate-700 mt-1 transition-colors group-hover:text-[#009BE8]">Blu</span>
                 </div>
               </div>
 
@@ -235,7 +235,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       }
                     : undefined
                 }
-                className={`py-3 px-3 rounded-2xl flex flex-col items-center justify-center transition-all cursor-pointer ${
+                className={`group py-3 px-3 rounded-2xl flex flex-col items-center justify-center transition-all cursor-pointer ${
                   isSelected
                     ? 'border-2 scale-105 shadow-sm'
                     : 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 hover:border-slate-300'
